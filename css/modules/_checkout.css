@@ -1,0 +1,28 @@
+.checkout-section {
+  padding-top: 50px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.checkout-section * {
+  box-sizing: border-box;
+}
+
+.checkount__left {
+  float: left;
+  width: 72.99578%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.checkount__right {
+  float: left;
+  width: 27.00422%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.item {
+  padding: 25px;
+}
