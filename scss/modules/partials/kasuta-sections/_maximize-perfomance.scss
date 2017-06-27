@@ -1,0 +1,146 @@
+.performance-section {
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0;
+  border-bottom: 1px solid $light-bright-green;
+  .content-wrapper{
+    overflow: hidden;
+    position: relative;
+  }
+  h2 {
+    text-align: left;
+    font-size: $daaki-font-size-h3;
+    display: inline-block;
+    color: $light-bright-green;
+    border-bottom: 1px solid $light-bright-green;
+    span {
+      color: #ffffff;
+    }
+  }
+  .triangle {
+    top: inherit;
+    right: -422px;
+    bottom: -425px;
+    background: $light-bright-green;
+  }
+  .top-list {
+    border: 1px solid $light-bright-green;
+    padding: 5px 60px 5px 15px;
+    float: left;
+    margin: 150px 0 0 35px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 250px;
+      height: 150px;
+      background: url("../images/multi-minerals.png") no-repeat center;
+      background-size: contain;
+      left: -38px;
+      top: -90px
+
+    }
+    li {
+      font-family: $font-avenir-book;
+      font-size: $daaki-font-size-h2 / 3;
+      margin: 12px 0;
+    }
+  }
+  .three-top-block-wrapper {
+    float: right;
+    margin-top: 40px;
+    .green-block {
+      border: 2px solid $light-bright-green;
+      color: $light-bright-green;
+      padding: 10px 35px 6px 35px;
+      font-family: $font-avenir-book;
+      font-size: $daaki-font-size-h4;
+      display: inline-block;
+      position: relative;
+      &:first-child {
+        &:before {
+          content: '1000 mg of coupled  ginsengs';
+          position: absolute;
+          width: 223px;
+          border-bottom: 1px solid $light-bright-green;
+          bottom: -2px;
+          right: -224px;
+          font-size: $font-size-arrow-down / 2;
+          color: #ffffff;
+          box-sizing: border-box;
+          padding: 0 0 5px 10px;
+        }
+      }
+      &:last-child {
+        margin-top: 150px;
+        &:before {
+          content: '';
+          position: absolute;
+          width: 1px;
+          height: 157px;
+          background: $light-bright-green;
+          left: 55px;
+          top: -132px;
+          font-size: $font-size-arrow-down / 2;
+          color: #ffffff;
+          -webkit-transform: rotate(-47deg);
+          -moz-transform: rotate(-47deg);
+          -ms-transform: rotate(-47deg);
+          -o-transform: rotate(-47deg);
+          transform: rotate(-47deg);
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          width: 1px;
+          height: 157px;
+          background: $light-bright-green;
+          right: 55px;
+          top: -132px;
+          font-size: $font-size-arrow-down / 2;
+          color: #ffffff;
+          -webkit-transform: rotate(47deg);
+          -moz-transform: rotate(47deg);
+          -ms-transform: rotate(47deg);
+          -o-transform: rotate(47deg);
+          transform: rotate(47deg);
+        }
+      }
+    }
+  }
+  .two-block{
+    margin: 50px 0 0 90px;
+    font-family: $font-avenir-medium;
+    float: left;
+    span{
+      text-transform: uppercase;
+      font-size: $daaki-font-size-h2 / 2;
+      border: 1px solid $light-bright-green;
+      padding: 10px 30px 6px 30px;
+      margin-bottom: 30px;
+      display: inline-block;
+    }
+    ul{
+      font-size: $font-size-arrow-down  / 2;
+      text-transform: uppercase;
+      li{
+        margin: 10px 0;
+      }
+    }
+    &.margin-left{
+      margin-left: 180px;
+    }
+  }
+  .image-proteara{
+    width: 600px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    img{
+      width: 100%;
+    }
+  }
+}
+.font-light{
+  font-family: $font-avenir-light;
+}

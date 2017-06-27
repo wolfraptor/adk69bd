@@ -1,0 +1,171 @@
+.anabolic-section{
+  padding: 50px 0 25px 0;
+  position: relative;
+  overflow: hidden;
+  .content-wrapper{
+    position: relative;
+  }
+  h2{
+    font-size: $daaki-font-size-h2;
+    font-family: $font-avenir-black;
+    display: inline-block;
+    border-bottom: 1px solid $default-blue-color;
+  }
+  .sub-title{
+    margin-top: 50px;
+
+    font-family: $font-avenir-book-oblique;
+    text-transform: uppercase;
+    font-size: $font-size-arrow-down;
+    .blue-text{
+      color: $default-blue-color;
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        width: 250px;
+        height: 1px;
+        background: $default-blue-color;
+        left: 0;
+        bottom: -5px;
+      }
+    }
+    .white-text{
+      font-size: $daaki-font-size-h5;
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        width: 250px;
+        height: 1px;
+        background: $default-blue-color;
+        right: -255px;
+        bottom: 5px;
+      }
+    }
+    p{
+      margin-left: 250px;
+    }
+  }
+  .list{
+    margin-top: 50px;
+    li{
+      margin-bottom: 50px;
+    }
+    span{
+      border: 1px solid $default-blue-color;
+      padding: 5px 15px 3px 15px;
+      font-size: $daaki-font-size-h5;
+      font-family: $font-avenir-book;
+      display: inline-block;
+    }
+    p{
+      font-size: $daaki-font-size-h3 / 2;
+      font-family: $font-avenir-book;
+      margin: 10px 0 0 10px;
+    }
+    .weight-sp{
+      background: $default-blue-color;
+      color: #000000;
+      font-family: $font-avenir-black;
+      margin-left: 5px;
+      text-transform: uppercase;
+    }
+  }
+  .formula{
+    width: 800px;
+    position: absolute;
+    top: 190px;
+    right: 0;
+    img{
+      width: 100%;
+    }
+  }
+  .description-list{
+    font-family: $font-avenir-book;
+    font-size: $daaki-font-size-h2 / 3;
+    text-transform: uppercase;
+    margin: 150px 0 0 0;
+    li{
+      margin-bottom: 25px;
+      line-height: 22px;
+      position: relative;
+      &:before{
+        content: 'o';
+        position: absolute;
+        top: 0;
+        left: -20px;
+        font-size: 14px;
+        font-family: $font-avenir-black;
+      }
+    }
+  }
+  .three-list-block{
+    width: 600px;
+    margin-top: 40px;
+    position: relative;
+    ul{
+      border: 1px solid $default-blue-color;
+      padding: 10px 10px 6px 10px;
+      font-family: $font-avenir-book;
+      font-size: $daaki-font-size-h2 / 3;
+      position: relative;
+      li{
+        margin: 10px 0;
+      }
+      &:first-child{
+        margin-top: 130px;
+        position: absolute;
+        left: 0;
+        float: left;
+        &:before{
+          content: '';
+          position: absolute;
+          width: 250px;
+          height: 90px;
+          background: url("../images/f-list.png") no-repeat center;
+          background-size: contain;
+          top: -40px;
+          left: -30px;
+        }
+      }
+      &:nth-child(2){
+        float: right;
+        width: 150px;
+        margin-top: 50px;
+        &:before{
+          content: '';
+          position: absolute;
+          width: 250px;
+          height: 90px;
+          background: url("../images/s-list.png") no-repeat center;
+          background-size: contain;
+          top: -35px;
+          right: -43px;
+        }
+      }
+      &:last-child{
+        float: right;
+        width: 270px;
+        margin-top: 70px;
+        &:before{
+          content: '';
+          position: absolute;
+          width: 250px;
+          height: 90px;
+          background: url("../images/t-list.png") no-repeat center;
+          background-size: contain;
+          top: -35px;
+          right: -43px;
+        }
+      }
+    }
+  }
+  .triangle {
+    top: inherit;
+    right: inherit;
+    left: -370px;
+    bottom: -370px;
+    background: $default-blue-color;
+  }
+}

@@ -1,0 +1,1057 @@
+.products-accordeon-wrapper {
+  //height: 850px !important;
+  overflow: hidden;
+  @media (max-width: 1440px) {
+    //height: 620px !important;
+  }
+  @media (max-width: 767px) {
+    height: 3000px !important;
+  }
+  .fp-tableCell {
+    //height: 850px !important;
+    overflow: hidden;
+    @media (max-width: 1440px) {
+      //height: 620px !important;
+    }
+    @media (max-width: 1000px) {
+      height: 3000px !important;
+    }
+  }
+  .fp-tableCell {
+    position: relative;
+  }
+  .product-name {
+    width: 200px;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.33s;
+    -moz-transition: 0.33s;
+    -ms-transition: 0.33s;
+    -o-transition: 0.33s;
+    transition: 0.33s;
+    @media (max-width: 1000px) {
+      display: none !important;
+    }
+    .open-bullet-btn {
+      width: 100%;
+      height: 100%;
+      background: url("../images/logo-bullet-vertical.png") no-repeat center;
+      background-size: 109px;
+    }
+    .open-metter-btn {
+      width: 100%;
+      height: 100%;
+      background: url("../images/logo-metter-vertical.png") no-repeat center;
+      background-size: 109px;
+    }
+    .open-kasuta-btn {
+      width: 100%;
+      height: 100%;
+      background: url("../images/logo-kasuta-vertical.png") no-repeat center;
+      background-size: 109px;
+
+    }
+    &.bullet-bg {
+      background: url("../images/open-kasuta-bg.jpg") no-repeat center;
+      background-size: cover;
+      z-index: 999;
+    }
+    &.metter-bg {
+      background: url("../images/open-kasuta-bg.jpg") no-repeat center;
+      background-size: cover;
+    }
+    &.kasuta-bg {
+      background: url("../images/open-kasuta-bg.jpg") no-repeat center;
+      background-size: cover;
+      //display: none;
+    }
+  }
+
+  .accordeon-card {
+    position: relative;
+    height: 100%;
+    width: 33.33%;
+    float: left;
+    overflow: hidden;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    background: $default-light-black-bg;
+    z-index: 222;
+    background: url("../images/card-bg.png") no-repeat center center;
+    background-size: cover;
+    border-right: 1px solid #ffffff;
+    box-sizing: border-box;
+    @media (max-width: 1000px) {
+      width: 100%;
+      float: none;
+      height: 900px;
+    }
+    @media (max-width: 640px) {
+      height: 1150px;
+    }
+    &:hover {
+      .brand-bank {
+        left: -100px !important;
+        @media (max-width: 1023px) {
+          left: -131px !important;
+        }
+      }
+    }
+    &:last-child {
+      position: absolute;
+      right: 0;
+      border-right: none;
+    }
+    .card-content {
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+      @media (max-width: 1440px) {
+        width: 100%;
+        max-width: 100%;
+      }
+      @media (max-width: 1000px) {
+        box-sizing: border-box;
+        padding: 0 10px;
+
+      }
+      .brand-bank {
+        width: 450px;
+        position: absolute;
+        left: -161px;
+        bottom: 0;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        img {
+          width: 100%;
+        }
+        @media (max-width: 1440px) {
+          width: 270px;
+          z-index: 22;
+
+        }
+        @media (max-width: 1000px) {
+          left: 0 !important;
+          right: 0;
+          margin: auto;
+        }
+
+      }
+      .brand-logo {
+        margin: 20px -60px 0 0;
+        text-align: right;
+        width: 260px;
+        float: right;
+        img {
+
+          width: 100%;
+        }
+
+        @media (max-width: 1440px) {
+          margin-top: 90px;
+          margin-right: 30px;
+        }
+        @media (max-width: 1000px) {
+          margin: 50px auto;
+          text-align: center;
+          float: none;
+        }
+      }
+      .buton-block {
+        position: absolute;
+        bottom: 40px;
+        left: 30px;
+        z-index: 22;
+        @media (max-width: 1300px) {
+          bottom: -20px;
+        }
+        .default-btn {
+          margin: 0 10px;
+          width: 133px;
+          height: 39px;
+          line-height: 39px;
+          display: inline-block;
+          font-size: 16px;
+          text-align: center; // need CanalDemiRomain
+          &:first-child {
+            visibility: hidden;
+          }
+        }
+      }
+      .open-card {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid $daaki-orange-color;
+        position: absolute;
+        bottom: 40px;
+        //right: 140px;
+        left: 65%;
+        cursor: pointer;
+        -webkit-transition: 0.66s;
+        -moz-transition: 0.66s;
+        -ms-transition: 0.66s;
+        -o-transition: 0.66s;
+        transition: 0.66s;
+        @media (max-width: 1000px) {
+          display: none !important;
+        }
+        span {
+          width: 30px;
+          height: 2px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          display: block;
+          background: $daaki-orange-color;
+          &:first-child {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+          }
+        }
+      }
+      .brand-description {
+        width: 490px;
+        float: left;
+        height: 100%;
+        position: relative;
+        -webkit-transition: 1s opacity;
+        -moz-transition: 1s opacity;
+        -ms-transition: 1s opacity;
+        -o-transition: 1s opacity;
+        transition: 1s opacity;
+        transition-delay: 1s;
+        
+        *{
+          @media (min-width: 992px){
+            opacity: 0;
+            transition: .33s opacity ese-in-out;
+            transition-delay: .33s;
+          }
+        }
+        
+        .brand-logo{
+          opacity: 1;
+          
+          img{
+            opacity: 1;
+          }
+        }
+
+        @media (max-width: 1440px) {
+          width: 100%;
+        }
+        .big-description {
+          overflow: hidden;
+          margin-top: 25px;
+          display: none;
+          padding-left: 65px;
+          @media (max-width: 1440px) {
+            margin-top: 15px;
+          }
+          @media (max-width: 1000px) {
+            width: 50%;
+            float: left;
+            margin: 20px auto;
+            display: block;
+            text-align: center;
+            br {
+              display: none;
+            }
+          }
+          @media (max-width: 640px) {
+            width: 100% !important;
+          }
+          .icon {
+            float: left;
+            width: 84px;
+            img {
+              width: 100%;
+            }
+            @media (max-width: 1440px) {
+              width: 50px;
+            }
+            @media (max-width: 1000px) {
+              width: 100%;
+              float: none;
+              display: block;
+              img {
+                width: initial;
+                margin: 0 auto;
+                display: block;
+              }
+            }
+          }
+          span {
+            display: -ms-flex;
+            display: -webkit-flex;
+            display: flex;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            align-items: center;
+            margin-left: 20px;
+            font-size: 19px;
+            font-family: $font-avenir-roman;
+            @media (max-width: 1440px) {
+              margin-left: 10px;
+              font-size: $font-size-arrow-down/2;
+              line-height: 17px;
+            }
+            @media (max-width: 1000px) {
+              margin: 10px 0 0 0;
+              display: inline-block;
+            }
+          }
+        }
+        .small-description {
+          overflow: hidden;
+          margin-top: 75px;
+          display: none;
+          @media (max-width: 1440px) {
+            margin-top: 45px;
+          }
+          @media (max-width: 1300px) {
+            margin-top: 25px;
+          }
+          @media (max-width: 1000px) {
+            display: block;
+            width: 80%;
+            margin: 30px auto;
+            .clear {
+              display: none;
+            }
+          }
+
+          @media (max-width: 1000px) {
+            .clear {
+              display: block;
+            }
+          }
+          .icon-text {
+            width: 50%;
+            float: left;
+            text-align: center;
+            margin-bottom: 50px;
+            @media (max-width: 1440px) {
+              margin-bottom: 25px;
+              img {
+                width: 40px;
+              }
+            }
+            @media (max-width: 1000px) {
+              width: 25%;
+            }
+            @media (max-width: 1000px) {
+              width: 50% !important;
+            }
+            p {
+              margin-top: 15px;
+              text-transform: uppercase;
+              font-size: $daaki-font-size-h5; // need CanalDemiRomain
+              @media (max-width: 1440px) {
+                margin-top: 10px;
+                font-size: $font-size-arrow-down/2;
+              }
+            }
+          }
+        }
+        .close-block {
+          font-size: $daaki-font-size-h2;
+          color: $daaki-orange-color;
+          text-align: center;
+          margin-top: 15px;
+          i {
+            cursor: pointer;
+          }
+        }
+      }
+      .brand-table {
+        height: 100%;
+        width: 170px;
+        float: left;
+        display: none;
+        position: relative;
+        img {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 100%;
+        }
+      }
+    }
+    &.card-opened {
+      width: calc(100% - 400px);
+      border-right: none;
+
+      @media (max-width: 650px) {
+        width: 100%;
+      }
+      .brand-description{
+          *{
+            opacity: 1;  
+          }
+        }
+      .brand-logo {
+        width: 261px;
+        margin: 0px auto 0 auto;
+        float: none;
+        text-align: center;
+        img {
+          width: 100%;
+        }
+      }
+      .brand-bank {
+        width: 440px;
+        left: 80px;
+        img {
+          width: 100%;
+        }
+      }
+      .buton-block {
+        .default-btn {
+          &:first-child {
+            visibility: visible;
+          }
+        }
+      }
+      .big-description {
+        display: flex !important;
+        @media (max-width: 650px) {
+          width: 100%;
+        }
+      }
+      .small-description {
+        display: block !important;
+        @media (max-width: 650px) {
+          .clear {
+            display: block;
+          }
+        }
+
+      }
+      .open-card {
+        left: 54%;
+        bottom: 40px;
+        background: $daaki-orange-color;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        @media (max-width: 1300px) {
+          left: 56%;
+        }
+        span {
+          background: $default-background-color;
+        }
+      }
+      .brand-table {
+        display: block;
+        float: right;
+        @media (max-width: 1023px) {
+          display: none !important;
+        }
+      }
+
+      &:hover {
+        .brand-bank {
+          left: 40px !important;
+        }
+      }
+      .play-btn-2 {
+        width: 220px;
+        height: 220px;
+        background-size: contain;
+        cursor: pointer;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        -webkit-transition: 0.33s;
+        -moz-transition: 0.33s;
+        -ms-transition: 0.33s;
+        -o-transition: 0.33s;
+        transition: 0.33s;
+        border-radius: 50%;
+        &:hover {
+          width: 230px;
+          height: 230px;
+        }
+        img {
+          position: absolute;
+          width: 100%;
+          z-index: 22;
+        }
+        @media (max-width: 1300px) {
+          width: 100px;
+          height: 100px;
+          &:hover {
+            width: 110px;
+            height: 110px;
+          }
+        }
+      }
+      .metter-card {
+        .brand-description {
+          margin-left: 530px !important;
+        }
+      }
+    }
+  }
+}
+
+.bullet-card {
+  .brand-table {
+    margin-right: 50px;
+    width: 272px !important;
+    img {
+      width: 100% !important;
+    }
+  }
+  .brand-description {
+    width: 490px !important;
+  }
+  .icon-text {
+    width: 25% !important;
+    img {
+      width: 60px;
+    }
+  }
+  .open-card {
+    left: 49% !important;
+  }
+}
+
+.metter-card {
+  .brand-table {
+    margin-right: 80px;
+    width: 280px !important;
+    img {
+      width: 100% !important;
+    }
+  }
+  .icon-text {
+    margin-bottom: 20px;
+    img {
+      width: 80px;
+    }
+  }
+  .small-description {
+    width: 380px;
+    margin-left: 55px;
+  }
+  .big-description {
+    padding-left: 35px !important;
+    span {
+      margin-left: 38px;
+    }
+  }
+  .open-card {
+    left: 49% !important;
+  }
+}
+
+.kasuta-card {
+  .brand-table {
+    margin-right: 100px;
+    width: 337px !important;
+    img {
+      width: 100% !important;
+    }
+  }
+  .small-description {
+    width: 380px;
+    margin-left: 55px;
+  }
+  .big-description {
+    padding-left: 35px !important;
+    span {
+      margin-left: 38px;
+    }
+  }
+  .small-description {
+    width: 380px;
+    margin-left: 55px;
+  }
+  .big-description {
+    padding-left: 35px !important;
+    span {
+      margin-left: 38px;
+    }
+  }
+  .open-card {
+    left: 50% !important;
+  }
+}
+
+//.card-hover {
+//  width: 38% !important;
+//  .brand-bank {
+//    left: -60px !important;
+//  }
+//}
+
+.card-hide {
+  width: 0 !important;
+  border-right: none !important;
+}
+
+.card-1-visible {
+  .metter-bg {
+    right: 200px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .kasuta-bg {
+    right: 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
+.card-2-visible {
+  .bullet-bg {
+    left: 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .kasuta-bg {
+    right: 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 999;
+  }
+  .accordeon-card {
+    margin-left: 100px !important;
+  }
+}
+
+.card-3-visible {
+  .bullet-bg {
+    left: 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .metter-bg {
+    left: 200px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .accordeon-card {
+    margin-left: 69px !important;
+  }
+}
+
+.play-btn-2 {
+  display: none;
+}
+
+.play-btn-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+
+.border-right {
+  border-right: 1px solid #fff;
+  box-sizing: border-box;
+}
+
+.border-left {
+  border-left: 1px solid #fff;
+  box-sizing: border-box;
+}
+
+//NEW STYLES 07/24
+
+.products-accordeon-wrapper .accordeon-card .card-content .brand-description {
+  margin-top: 60px;
+}
+
+//.products-accordeon-wrapper .accordeon-card.card-opened:hover .brand-bank{
+//  left: -5px !important;
+//}
+
+.products-accordeon-wrapper .accordeon-card.card-opened .card-content .buton-block {
+  bottom: 40px;
+}
+
+.products-accordeon-wrapper .accordeon-card.card-opened .brand-description {
+  margin-left: 530px;
+}
+
+.products-accordeon-wrapper .accordeon-card .card-content .brand-description .small-description .icon-text {
+  box-sizing: border-box;
+  padding-left: 20px
+}
+
+.products-accordeon-wrapper .accordeon-card .card-content .brand-description .small-description {
+  margin-top: 90px;
+}
+
+.products-accordeon-wrapper .accordeon-card .card-content .brand-description .small-description.small-margin {
+  margin-top: 50px;
+}
+
+@media(max-width: 1860px) {
+  .kasuta-card .brand-table {
+    margin-right: 80px;
+    width: 250px !important;
+  }
+  .brand-bank {
+    width: 400px !important;
+  }
+  .card-opened .brand-bank {
+    width: 400px !important;
+  }
+  .metter-card .brand-description,
+  .kasuta-card .brand-description,
+  .bullet-card .brand-description {
+    width: 430px !important;
+  }
+  .card-opened .brand-description {
+    margin-left: 480px !important;
+  }
+  .metter-card .open-card {
+    left: 51.5% !important;
+  }
+  .metter-card .small-description {
+    margin-left: 25px !important;
+  }
+  .metter-card .small-description {
+    margin-top: 39px !important;
+  }
+  .card-opened .play-btn-2 {
+    width: 170px !important;
+    height: 170px !important;
+  }
+  .bullet-card .open-card {
+    left: 54% !important;
+  }
+  .kasuta-card .open-card {
+    left: 55% !important;
+  }
+}
+
+@media(max-width: 1700px) {
+  .brand-bank,
+  .card-opened .brand-bank {
+    width: 350px !important;
+  }
+  .card-content .brand-logo,
+  .card-opened .brand-logo {
+    width: 210px !important;
+  }
+  .card-opened .brand-logo {
+    margin: 0 auto !important;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-logo {
+    margin: 20px -30px 0 0;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .open-card {
+    width: 38px;
+    height: 38px;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .open-card span {
+    width: 19px;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .buton-block .default-btn {
+    width: 110px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 12px;
+  }
+  .card-1-visible .metter-bg {
+    width: 150px !important;
+    right: 150px !important;
+  }
+  .products-accordeon-wrapper .product-name {
+    width: 150px;
+  }
+  .products-accordeon-wrapper .product-name .open-kasuta-btn,
+  .products-accordeon-wrapper .product-name .open-bullet-btn {
+    background-size: 90px !important;
+  }
+  .products-accordeon-wrapper .accordeon-card.card-opened .brand-bank {
+    left: 40px;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-description .big-description .icon {
+    width: 65px;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-description .small-description .icon-text img {
+    width: 61px;
+  }
+  .bullet-card .brand-table {
+    margin-right: 40px;
+    width: 215px !important;
+  }
+  .metter-card .brand-description, .kasuta-card .brand-description, .bullet-card .brand-description {
+    width: 350px !important;
+  }
+  .card-opened .brand-description {
+    margin-left: 400px !important;
+  }
+  .products-accordeon-wrapper .accordeon-card.card-opened {
+    width: calc(100% - 300px);
+  }
+  .kasuta-card .small-description {
+    margin-left: 0;
+  }
+  .card-3-visible .metter-bg {
+    left: 150px !important;
+  }
+  .bullet-card .open-card {
+    left: 50% !important;
+  }
+  .metter-card .small-description,
+  .kasuta-card .small-description {
+    width: 280px !important;
+    margin-left: 20px !important;
+  }
+  .metter-card .open-card {
+    left: 49% !important;
+  }
+  .kasuta-card .open-card {
+    left: 49% !important;
+  }
+  .metter-card .brand-table {
+    width: 217px !important;
+  }
+}
+
+@media(max-width: 1420px) {
+  .card-content .brand-logo, .card-opened .brand-logo {
+    width: 160px !important;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-bank {
+    width: 270px !important;
+    bottom: -30px;
+    left: -90px;
+  }
+  .card-opened .brand-bank {
+    left: 40px !important;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .buton-block {
+    bottom: 38px;
+    left: 100px;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .open-card {
+    bottom: 30px;
+  }
+  .card-opened .buton-block {
+    left: 0 !important;
+  }
+  .products-accordeon-wrapper .product-name .open-metter-btn {
+    background: url("../images/logo-metter-vertical.png") no-repeat center;
+    background-size: 80px !important;
+  }
+  .products-accordeon-wrapper .product-name .open-bullet-btn {
+    background: url("../images/logo-bullet-vertical.png") no-repeat center;
+    background-size: 80px !important;
+  }
+  .products-accordeon-wrapper .product-name .open-kasuta-btn {
+    background: url("../images/logo-kasuta-vertical.png") no-repeat center;
+    background-size: 80px !important;
+  }
+  .card-opened .brand-description {
+    margin-left: 300px !important;
+  }
+  .bullet-card .brand-table {
+    width: 155px !important;
+  }
+  .kasuta-card .brand-table {
+    width: 200px !important;
+  }
+  .metter-card .brand-table {
+    width: 180px !important;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-description .big-description .icon {
+    width: 50px;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-description .small-description .icon-text img {
+    width: 45px;
+  }
+  .brand-description .small-description.small-margin {
+    margin-top: 30px;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .open-card {
+    bottom: 6px;
+  }
+  .card-opened .play-btn-2 {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-logo {
+    margin: 20px 0px 0 0;
+  }
+  .products-accordeon-wrapper .accordeon-card.card-opened .open-card {
+    left: 46% !important;
+  }
+  .bullet-card .open-card {
+    left: 65% !important;
+  }
+  .metter-card .open-card {
+    left: 65% !important;
+  }
+  .kasuta-card .open-card {
+    left: 65% !important;
+  }
+  .bullet-card .card-opened .open-card {
+    left: 49% !important;
+  }
+}
+
+@media(max-width: 1235px) {
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-bank {
+    width: 230px !important;
+    left: -82px;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-logo {
+    margin: 20px 30px 0 0;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .buton-block .default-btn {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 10px;
+    margin: 0 5px;
+  }
+  .card-2-visible .accordeon-card {
+    margin-left: 75px !important;
+  }
+  .kasuta-card .brand-table {
+    margin-right: 40px;
+    width: 150px !important;
+  }
+  .card-1-visible .metter-bg {
+    width: 100px !important;
+    right: 100px !important;
+  }
+  .products-accordeon-wrapper .product-name {
+    width: 100px;
+  }
+  .card-3-visible .metter-bg {
+    left: 100px !important;
+  }
+  .products-accordeon-wrapper .accordeon-card.card-opened {
+    width: calc(100% - 200px);
+  }
+  .products-accordeon-wrapper .product-name .open-metter-btn {
+    background: url("../images/logo-metter-vertical.png") no-repeat center;
+    background-size: 60px !important;
+  }
+  .products-accordeon-wrapper .product-name .open-bullet-btn {
+    background: url("../images/logo-bullet-vertical.png") no-repeat center;
+    background-size: 60px !important;
+  }
+  .products-accordeon-wrapper .product-name .open-kasuta-btn {
+    background: url("../images/logo-kasuta-vertical.png") no-repeat center;
+    background-size: 60px !important;
+  }
+  .card-2-visible .accordeon-card {
+    margin-left: 50px !important;
+  }
+  .card-opened .brand-description {
+    margin-left: 250px !important;
+  }
+  .metter-card .brand-table {
+    margin-right: 40px;
+  }
+}
+
+@media(max-width: 1023px) {
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-description {
+    width: 100% !important;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-logo {
+    margin: 0 auto;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-description .big-description {
+    width: 100%;
+    padding: 0;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-description .big-description .icon {
+    width: 80px;
+    margin: 0 auto;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-description .big-description .icon img {
+    width: 100%;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-description .small-description.small-margin {
+    margin-top: 50px;
+    width: 100%;
+    padding-top: 30px;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .buton-block .default-btn:first-child {
+    visibility: visible;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-description .small-description .icon-text {
+    width: 25% !important;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-description .small-description {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-description .small-description .clear {
+    display: none !important;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-description .small-description .icon-text {
+    width: 25% !important;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .buton-block {
+    bottom: 38px;
+    left: 0px;
+  }
+  .kasuta-card .big-description {
+    padding-left: 0 !important;
+  }
+  .metter-card .big-description {
+    padding-left: 0 !important;
+  }
+  .products-accordeon-wrapper .accordeon-card {
+    height: 850px !important;
+  }
+}
+
+@media(max-width: 640px) {
+
+  .products-accordeon-wrapper .accordeon-card {
+    height: 950px !important;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-description .small-description .icon-text {
+    width: 50% !important;
+    min-height: 72px;
+  }
+  .products-accordeon-wrapper .accordeon-card .card-content .brand-description .small-description .clear {
+    display: block !important;
+  }
+}

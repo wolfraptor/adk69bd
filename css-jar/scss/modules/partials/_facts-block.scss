@@ -1,0 +1,47 @@
+.facts-block {
+  //overflow: auto;
+
+  .title-block {
+    height: 45%;
+    background: url("../images/facts-bg.png");
+
+    div {
+      color: $default-background-color;
+      span {
+        width: 166px;
+        height: 166px;
+        border-radius: 50%;
+        line-height: 170px;
+        text-align: right;
+        border-color: $default-background-color;
+        @media (max-width: 1440px) {
+          width: 100px;
+          height: 100px;
+          line-height: 105px;
+        }
+        @media (max-width: 1023px) {
+          width: 85px;
+          height: 85px;
+          line-height: 90px;
+        }
+        @media (max-width: 640px) {
+          width: 55px;
+          height: 55px;
+          line-height: 57px;
+        }
+      }
+    }
+  }
+  .blog-section {
+    height: 55%;
+    .small-blog-block,
+    .small-block-wrapp {
+      height: 100%;
+    }
+    .small-blog-block {
+      .blog-image {
+        height: calc(100% - 114px);
+      }
+    }
+  }
+}

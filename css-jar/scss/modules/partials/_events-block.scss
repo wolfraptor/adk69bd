@@ -1,0 +1,87 @@
+.events-section {
+  overflow: hidden;
+  @media(max-width: 900px){
+    height: auto!important;
+  }
+  .fp-tableCell{
+    @media(max-width: 900px){
+      height: auto!important;
+    }
+  }
+  .title-block {
+    height: 45%;
+    background: url("../images/events-bg.jpg");
+    @media(max-width: 1000px){
+      height: 225px;
+    }
+    div {
+      @media(max-width:767px){
+        top: 0!important;
+      }
+      span {
+        border-radius: 50%;
+        text-align: right;
+        padding-right: 10px;
+        width: 160px;
+        height: 160px;
+        line-height: 170px;
+        @media (max-width: 1440px) {
+          width: 120px;
+          height: 120px;
+          line-height: 128px;
+        }
+        @media (max-width: 1023px) {
+          width: 100px;
+          height: 100px;
+          line-height: 110px;
+        }
+        @media (max-width: 640px) {
+          width: 60px;
+          height: 60px;
+          line-height: 67px;
+        }
+      }
+    }
+  }
+  .events-block-wrapper {
+    overflow: hidden;
+    height: 55%;
+    .small-block-wrapp {
+      width: 25%;
+      height: 100%;
+      overflow: hidden;
+      float: left;
+      position: relative;
+      margin-bottom: -5px;
+      @media (max-width: 850px) {
+        width: 50%;
+      }
+      @media (max-width: 640px) {
+        width: 100%;
+      }
+      .small-blog-block {
+        height: 100%;
+        .blog-image {
+          height: calc(100% - 114px);
+          @media (max-width: 1000px) {
+            height: 250px!important;
+          }
+        }
+      }
+      @media (max-width: 640px) {
+        width: 50%;
+      }
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+    }
+    .block-images-1{
+      background: url("../images/events-small-bg-1.png");
+      background-size: cover;
+    }
+    .block-images-2{
+      background: url("../images/events-small-bg.png");
+      background-size: cover;
+    }
+  }
+}

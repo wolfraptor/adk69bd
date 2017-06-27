@@ -1,0 +1,622 @@
+.checkout-section{
+  padding: 200px 45px 100px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url(../images/checkout-bg.png) no-repeat center top;
+  background-size: cover;
+  @media (max-width: 1300px){
+    padding: 200px 15px 0;
+  }
+  *{
+    box-sizing: border-box;
+  }
+
+
+  .checkout{
+    &__left{
+      float: left;
+      width: percentage(865/1185);
+      padding-left: 5px;
+      padding-right: 5px;
+      @media (max-width: 1024px){
+        width: 100%;
+      }
+    }
+    
+    &__right{
+      float: left;
+      width: percentage(320/1185);
+      padding-left: 5px;
+      padding-right: 5px;
+      @media (max-width: 1024px){
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .item{
+    padding: 40px 10px 15px;
+    border: 1px $daaki-orange-color solid;
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 30px;
+    &__left{
+      float: left;
+      width: 25%;
+      padding: 0 25px;
+      @media (max-width: 1300px){
+        padding: 0 10px;
+      }
+      @media (max-width: 768px){
+        width: 100%;
+        text-align: center;
+      }
+      img{
+        width: auto;
+        height: auto;
+        max-height: 350px;
+        max-width: 100%;
+        @media (max-width: 768px){
+          max-height: 300px;
+        }
+      }
+    }
+    &__right{
+      float: left;
+      width: 75%;
+      padding: 0 25px;
+      @media (max-width: 768px){
+        width: 100%;
+      }
+      @media (max-width: 480px){
+        padding: 0;
+      }
+      .item__row{
+        margin-left: -35px;
+        margin-right: -35px;
+        @media (max-width: 1300px){
+          margin-left: -15px;
+          margin-right: -15px;
+        }     
+      }
+      .item__col{
+        float: left;
+        padding: 35px 35px 0;
+        @media (max-width: 1300px){
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        &--left{
+          width: 60%;
+          @media (max-width: 600px){
+            width: 100%;
+          }
+          .store-group{
+            @media (max-width: 600px){
+              margin-bottom: 15px;
+            }
+          }
+        }
+        &--right{
+          width: 40%;
+          @media (max-width: 600px){
+            width: 100%;
+            padding-top: 0;
+          }
+          .store-group{
+            text-align: right;
+            margin-bottom: 10px;
+          }
+        }
+        .store-group__counter{
+          @media (max-width: 600px){
+            text-align: right;
+          }
+        }
+        .store-group__label{
+          text-transform: uppercase;
+        }
+      }
+      .button__col{
+        float: left;
+        padding: 0px 35px;
+        text-align: center;
+        @media (max-width: 1300px){
+          padding-left: 0;
+          padding-right: 15px;
+        }
+        &--left{
+          width: 60%;
+          @media (max-width: 600px){
+            width: 50%;
+          }
+          @media (max-width: 480px){
+            width: 100%;
+            padding: 0;
+          }
+        }
+        &--right{
+          width: 40%;
+          text-align: right;
+          @media (max-width: 600px){
+            width: 50%;
+          }
+          @media (max-width: 480px){
+            width: 100%;
+            padding: 0;
+            text-align: center;
+            margin-top: 10px;
+          }
+        }
+        a{
+          display: inline-block;
+          font-family: $font-avenir-light;
+          font-size: 17px;
+          color: $daaki-orange-color;
+          text-transform: uppercase;
+          padding: 8px 10px;
+          border: 1px $daaki-orange-color solid;
+          @media (max-width: 480px){
+            font-size: 14px;
+            padding: 5px 10px;
+          }
+        }
+        .button_viev{
+          margin-left: 50px;
+          @media (max-width: 1300px){
+            margin-left: 65px;
+          }
+          @media (max-width: 600px){
+            margin-left: 0;
+          }
+        }
+        .button_viev.button_open{
+          border: 1px #fff solid;
+          color: #fff;
+        }
+        .button_remove{
+          border: none;
+          color: #fff;
+          padding-left: 0;
+        }
+        .button_update{
+          padding: 8px 15px;
+          @media (max-width: 480px){
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+    .store-dropdown{
+      @media (max-width: 1300px){
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+    .store-group__price{
+      line-height: 35px;
+    }
+    .store-group__old-price{
+      margin-top: 5px;
+    }
+    &__offers{
+      margin-top: 60px;
+      @media (max-width: 1300px){
+        margin-top: 30px;
+      }
+    }
+    .offer{
+      height: 90px;
+      margin-bottom: 10px;
+    }
+    &__heading{
+      font-family: $canal-demi;
+      font-size: 38px;
+      color: $daaki-orange-color;
+      padding-bottom: 15px;
+      border-bottom: 1px #fff solid;
+      @media (max-width: 768px){
+        text-align: center;
+        padding-top: 20px;
+      }
+    }
+    .store-dropdown{
+      text-transform: uppercase;
+    }
+    .store-group__counter{
+      margin-left: 0;
+      float: none;
+    }
+    .item__offers{
+      display: none;
+      float: left;
+      width: 100%;
+    }
+  }
+  .offer{
+    border: 1px $daaki-orange-color dashed;
+    overflow: hidden;
+    clear: both;
+    height: 110px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    position: relative;
+    @media (max-width: 480px){
+      height: auto !important;
+      padding: 10px;
+    }
+    &__left{
+      float: left;
+      width: 30%;
+      height: 100%;
+      text-align: center;
+      @media (max-width: 768px){
+        width: 25%;
+        padding: 0 10px;
+      }
+      @media (max-width: 480px){
+        width: 100%;
+        height: auto;
+      }
+      img{
+        height: 100%;
+        width: auto;
+        @media (max-width: 768px){
+          height: auto;
+          width: auto;
+          max-width: 95%;
+          max-height: 100%;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        @media (max-width: 600px){
+          max-width: 90%;
+        }
+      }
+    }
+    &__right{
+      float: left;
+      width: 70%;
+      height: 100%;
+      vertical-align: middle;
+      @media (max-width: 480px){
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__descr{
+      display: inline-block;
+      width: 56%;
+      vertical-align: middle;
+      font-family: $font-avenir-light;
+      font-size: 17px;
+      line-height: 21px;
+      @media (max-width: 768px){
+        font-size: 14px;
+      }
+      @media (max-width: 480px){
+        width: 100%;
+        padding-bottom: 10px;
+      }
+    }
+    &__prices{
+      display: inline-block;
+      vertical-align: bottom;
+      .store-group__old-price{
+        font-size: 17px;
+        font-family: $font-avenir-light;
+        line-height: 25px;
+        display: inline-block;
+        vertical-align: middle;
+        @media (max-width: 600px){
+          font-size: 14px;
+        }
+      }
+      .offer__price{
+        font-size: 17px;
+        font-family: $font-avenir-light;
+        line-height: 25px;
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 15px;
+        margin-top: 5px;
+        @media (max-width: 600px){
+          font-size: 14px;
+          padding-left: 5px;
+        }
+      }
+      
+    }
+    &__valign{
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &__label{
+      display: block;
+      width: 30px;
+      height: 30px;
+      border: 1px #fff solid;
+      border-radius: 50%;
+      position: absolute;
+      right: 50px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      @media (max-width: 1300px){
+        right: 20px;
+      }
+      @media (max-width: 600px){
+        right: 10px;
+      }
+      @media (max-width: 480px){
+        width: 25px;
+        height: 25px;
+        bottom: 0;
+        right: 0;
+        top: auto;
+        transform: translateY(0);
+      }
+    }
+    &__checkbox{
+      display: none;
+    }
+    &__checkbox:checked + label{
+      border: 1px $daaki-orange-color solid;
+      background-color: $daaki-orange-color;
+      background: url(../images/tick.png) no-repeat center center;
+      background-size: contain;
+    }
+    &__action{
+      display: block;
+      position: absolute;
+      right: 20px;
+      bottom: 10px;
+      width: 105px;
+      border: 1px $daaki-orange-color solid;
+      color: $daaki-orange-color;
+      line-height: 25px;
+      text-align: center;
+      @media (max-width: 480px){
+        position: static;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .data{
+    border: 1px $daaki-orange-color solid;
+    padding: 20px;
+    margin-bottom: 10px;
+    &__wrapper{
+      @media (max-width: 1024px){
+        width: 33.33%;
+        float: left;
+        padding: 0 5px;
+      }
+      @media (max-width: 768px){
+        width: 50%;
+      }
+      &:nth-child(2){
+        @media (max-width: 768px){
+          float: right;
+        }
+      }
+      @media (max-width: 600px){
+        width: 100%;
+      }
+    }
+    &__heading{
+      font-family: $font-avenir-heavy;
+      font-size: 21px;
+      line-height: 30px;
+      text-align: center;
+      color: $daaki-orange-color;
+      text-transform: uppercase;
+      border-bottom: 1px $daaki-orange-color solid;
+    }
+    &__sub-heading{
+      font-family: $font-avenir-medium;
+      font-size: 17px;
+      padding: 35px 0 17px;
+    }
+    &__text{
+      font-family: $font-avenir-book;
+      font-size: 13px;
+      line-height: 16px;
+      padding-right: 60px;
+      margin-bottom: 35px;
+      position: relative;
+      @media (max-width: 1024px){
+        padding-right: 30px;
+      }
+      &:before{
+        content: '';
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url(../images/tick.png) no-repeat center center;
+        background-size: contain;
+        @media (max-width: 1024px){
+          right: 0;
+        }
+      }
+    }
+    &__links{
+      text-align: right;
+      li{
+        display: inline-block;
+        font-family: $font-avenir-book;
+      font-size: 13px;
+      line-height: 16px;
+      color: $daaki-orange-color;
+      text-transform: uppercase;
+      }
+    }
+    &__link{
+      font-family: $font-avenir-book;
+      font-size: 13px;
+      line-height: 16px;
+      color: $daaki-orange-color;
+      text-transform: uppercase;
+    }
+    &__group{
+      overflow: hidden;
+    }
+    &__label{
+      display: block;
+      font-family: $font-avenir-book;
+      font-size: 13px;
+      text-transform: uppercase;
+      padding: 30px 0 20px;
+      text-align: center;
+    }
+    &__field{
+      float: left;
+      width: 65%;
+      border: 1px $daaki-orange-color solid;
+      background: none;
+      font-family: $font-avenir-book-oblique;
+      font-size: 8px;
+      line-height: 26px;
+      height: 28px;
+      padding: 0 8px;
+      text-transform: uppercase;
+      color: #fff;
+      margin-right: 2px;
+      @media (max-width: 1024px){
+        width: 100%;
+      }
+      @media (max-width: 600px){
+        width: 49%;
+      }
+      @media (max-width: 480px){
+        width: 69%;
+      }
+    }
+    &__button{
+      float: left;
+      width: 34%;
+      border: 1px $daaki-orange-color solid;
+      background: none;
+      // line-height: 26px;
+      height: 28px;
+      padding: 0;
+      text-transform: uppercase;
+      color: $daaki-orange-color;
+      cursor: pointer;
+      @media (max-width: 1024px){
+        width: 100%;
+        margin-top: 10px;
+      }
+      @media (max-width: 600px){
+        width: 49%;
+        margin-top: 0;
+      }
+      @media (max-width: 480px){
+        width: 30%;
+      }
+    }
+    &__list{
+      padding-top: 35px;
+      padding-bottom: 20px;
+      li{
+        font-family: $font-avenir-book;
+        font-size: 10px;
+        line-height: 20px;
+        text-transform: uppercase;
+      }
+      .data__value{
+        text-transform: none;
+        float: right;
+      }
+    }
+    &__amount-text{
+      font-family: $font-avenir-heavy;
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: uppercase;
+      @media (max-width: 1300px){
+        font-size: 12px;
+      }
+    }
+    &__amount-value{
+      float: right;
+      font-family: $font-avenir-heavy;
+      font-size: 22px;
+      line-height: 24px;
+      color: $daaki-orange-color;
+      @media (max-width: 1300px){
+        font-size: 18px;
+      }
+      @media (max-width: 1024px){
+        font-size: 16px;
+      }
+    }
+    &__confirm{
+      display: block;
+      border: 1px $daaki-orange-color solid;
+      padding: 0;
+      font-family: $font-avenir-book;
+      font-size: 17px;
+      line-height: 40px;
+      color: $daaki-orange-color;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 25px 0 15px;
+      @media (max-width: 1300px){
+        font-size: 14px;
+      }
+      @media (max-width: 1024px){
+        font-size: 12px;
+      }
+    }
+    &__icons-list{
+      li{
+        margin-bottom: 25px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+    &__list-img{
+      display: inline-block;
+      width: 30%;
+      vertical-align: middle;
+      font-family: $font-avenir-heavy;
+      font-size: 25px;
+      color: $daaki-orange-color;
+      @media (max-width: 1300px){
+        width: 35%;
+      }
+      @media (max-width: 1024px){
+        width: 40%;
+      }
+    }
+    &__list-value{
+      display: inline-block;
+      width: 68%;
+      font-family: $font-avenir-book;
+      font-size: 10px;
+      line-height: 20px;
+      vertical-align: middle;
+      text-transform: uppercase;
+      @media (max-width: 1300px){
+        width: 60%;
+      }
+      @media (max-width: 1024px){
+        width: 55%;
+      }
+    }
+  }
+
+
+}
+

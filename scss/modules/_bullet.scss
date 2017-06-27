@@ -1,0 +1,1790 @@
+.bullet-page {
+  .primary-description {
+    position: relative;
+    .play-abs {
+      width: 250px;
+      position: absolute;
+      z-index: 10000;
+    }
+    .play-btn-2 {
+      position: absolute;
+      right: 0;
+      display: block !important;
+      top: 26%;
+      width: 250px;
+      transition: .33s ease-in-out;
+      height: 250px;
+      overflow: hidden;
+      cursor: pointer;
+      .play-btn-content {
+        border-radius: 50%;
+        z-index: 2;
+        video {
+          width: 178%;
+          height: 143%;
+          position: absolute;
+          overflow: hidden;
+          top: -53px;
+          z-index: 1;
+          left: -34%;
+        }
+      }
+
+      &.big-margin {
+        top: 32%;
+        padding-top: 0 !important;
+      }
+    }
+  }
+
+  .meter-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 600px;
+    h2 {
+      text-transform: uppercase;
+      span {
+        display: block;
+        color: #000;
+        font-size: 36px;
+      }
+    }
+
+    .descr-text {
+      text-transform: none;
+      margin-bottom: 30px;
+      line-height: 1.4;
+
+      b {
+        font-family: 'Avenir LT Std 95 Black';
+      }
+
+      &.big-padding {
+        margin-bottom: 60px;
+      }
+    }
+
+    .black-box {
+      text-transform: none;
+      background: #000;
+      color: #fff;
+      font-family: 'Avenir LT Std 95 Black';
+      padding: 10px 15px;
+      display: inline-block;
+      width: 580px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .hydro-block {
+      max-width: 400px;
+      width: 100%;
+      position: absolute;
+      top: 135px;
+      right: 20px;
+    }
+  }
+
+  .most-verstaile {
+    padding-bottom: 180px;
+  }
+
+  .section-microscope {
+    h2 {
+      float: none;
+      color: #ff6600;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 60px;
+    }
+
+    .left-col {
+      float: left;
+      width: 50%;
+
+      .info-list {
+        max-width: 430px;
+      }
+    }
+    .right-col {
+      float: left;
+      width: 50%;
+    }
+
+    .left-col-article {
+      margin-bottom: 60px;
+      .info-list {
+        margin-top: 10px;
+      }
+
+      &:first-child {
+        .info-list {
+          margin-left: 60px;
+        }
+      }
+
+      .advantages-list {
+        margin-top: 10px;
+      }
+
+      .bordered-button {
+        color: #fff;
+      }
+      .plus-button {
+        width: 35px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -5px;
+        margin-left: 15px;
+        img {
+          display: block;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .right-col-article {
+      margin-bottom: 60px;
+      .info-list {
+        max-width: 350px;
+        margin-left: 60px;
+      }
+
+      &:first-child {
+        .info-list {
+          position: relative;
+          top: -20px;
+        }
+      }
+    }
+
+    .alanine-img {
+      width: 220px;
+      display: block;
+      max-width: 100%;
+    }
+    .acetyl-img {
+      width: 395px;
+      display: block;
+      max-width: 100%;
+    }
+    .citrulline-img {
+      width: 320px;
+      display: block;
+      max-width: 100%;
+    }
+    .taurine-img {
+      width: 415px;
+      max-width: 100%;
+      display: block;
+    }
+
+    .info-list {
+      position: static;
+
+      li {
+        display: inline-block;
+        font-size: 14px;
+
+        &:first-child {
+          &:before {
+            position: absolute;
+            content: '';
+            top: -18px;
+            left: 10px;
+            width: 13px;
+            height: 23px;
+            background: url('../images/triangle.png') center center no-repeat;
+            background-size: cover;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+  }
+
+  .performance-section {
+    background: url("../images/perf-bullet.jpg") center center no-repeat;
+    background-size: cover;
+
+    &.black-bg {
+      background: #000;
+    }
+
+    .heading {
+      float: none;
+      font-size: 50px;
+      font-family: 'Avenir LT Std 95 Black';
+      text-transform: uppercase;
+      color: #fff;
+
+      span {
+        color: #94d600;
+      }
+    }
+
+    .content-wrapper {
+      position: relative;
+    }
+
+    @media (min-width: 1920px) {
+      .content-wrapper {
+        margin-top: 5%;
+      }
+    }
+
+    .herbs {
+      width: 660px;
+      max-width: 100%;
+      display: block;
+      margin: 250px auto;
+    }
+
+    .bordered-list {
+      position: static;
+      margin: 0;
+      border-color: #94d600;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-size: 12px;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    .info-block {
+      position: absolute;
+      left: auto;
+      top: auto;
+      font-family: 'Avenir LT Std 35 Light';
+
+      .block-heading {
+        font-size: 25px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        border-bottom: none;
+      }
+
+      .block-hint {
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #ff6600;
+      }
+
+      &.left-top {
+        top: 90px;
+        left: 0;
+        max-width: 540px;
+      }
+
+      &.left-bottom {
+        bottom: -190px;
+        left: 0;
+        max-width: 640px;
+      }
+
+      &.right-top {
+        top: 185px;
+        right: -80px;
+        max-width: 390px;
+      }
+
+      &.right-bottom {
+        bottom: -150px;
+        right: -80px;
+        max-width: 485px;
+      }
+    }
+    .plus-button {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -5px;
+      margin-left: 15px;
+      img {
+        width: 35px;
+        display: block;
+        max-width: 100%;
+      }
+    }
+
+    &.black-bg {
+      text-transform: uppercase;
+
+      i {
+        font-style: italic;
+      }
+
+      .heading {
+        font-size: 33px;
+        color: #0072bc;
+        border-bottom-color: #fff;
+        padding-bottom: 5px;
+        margin-bottom: 30px;
+      }
+
+      .simple-text {
+        font-family: 'Avenir LT Std 35 Light';
+        margin-bottom: 10px;
+
+        b {
+          font-family: 'Avenir LT Std 95 Black';
+        }
+      }
+
+      .text-row {
+        line-height: 1;
+        margin-bottom: 30px;
+      }
+
+      .blue-text {
+        padding: 10px 15px;
+        background: #0072bc;
+        color: #fff;
+        display: inline-block;
+        font-family: 'Avenir LT Std 35 Light';
+
+        &:first-child {
+          margin-right: 10px;
+        }
+      }
+
+      .big-text {
+        color: #0072bc;
+        font-size: 33px;
+        font-style: italic;
+        margin-bottom: 15px;
+        font-family: 'Avenir LT Std 35 Light';
+
+        span {
+          color: #fff;
+          display: block;
+          text-align: right;
+          font-size: 26px;
+          padding-right: 85px;
+          margin-top: 5px;
+        }
+      }
+
+      .buttons-row {
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+
+      .bordered-button {
+        font-size: 12px;
+        color: #fff;
+        font-family: 'Avenir LT Std 35 Light';
+      }
+
+      .sub-heading {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .small-text {
+        font-size: 13px;
+        font-family: 'Avenir LT Std 35 Light';
+        line-height: 2;
+        padding-left: 30px;
+
+        b {
+          font-family: 'Avenir LT Std 95 Black';
+        }
+      }
+
+      .right-scheme {
+        display: block;
+        max-width: 100%;
+      }
+
+      .bottom-scheme {
+        display: block;
+        max-width: 80%;
+        padding-top: 40px;
+        margin-left: auto;
+      }
+    }
+  }
+
+  .formula-section {
+    background: url("../images/textured-bg.jpg") center center no-repeat;
+    background-size: cover;
+    color: #000;
+    position: relative;
+    text-transform: uppercase;
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .big-triangle {
+      position: absolute;
+      z-index: 10;
+      top: -339px;
+      left: 0;
+      max-width: 80%;
+    }
+
+    .content-wrapper {
+      z-index: 100;
+      position: relative;
+      @include clearfix;
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    @media (min-width: 1920px) {
+      .content-wrapper {
+        margin-top: 3%;
+      }
+    }
+
+    .square-list {
+      padding-left: 20px;
+      list-style: square;
+
+      li {
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .left-col {
+      float: left;
+      width: 50%;
+      .square-list {
+        position: relative;
+        font-size: 17px;
+        top: -5px;
+
+        &.static {
+          padding-top: 0;
+          &:before {
+            display: none;
+          }
+        }
+      }
+
+      .minerals {
+        display: block;
+        max-width: 80%;
+        margin-left: 25px;
+      }
+
+      .light-text {
+        background: #e4e4e5;
+        font-size: 24px;
+        color: #000;
+        font-family: 'Avenir LT Std 85 Heavy';
+        display: inline-block;
+        padding: 10px 15px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+      }
+
+      .bordered-text {
+        font-family: "AvenirLTStd-Medium";
+        font-size: 24px;
+        padding: 10px 15px;
+        border-color: #000;
+        display: block;
+        max-width: 300px;
+        text-align: center;
+        margin-bottom: 35px;
+      }
+    }
+
+    .right-col {
+      float: left;
+      width: 50%;
+
+      .square-list {
+        position: relative;
+      }
+
+      .vitamins {
+        display: block;
+        max-width: 100%;
+        margin-top: 50px;
+      }
+    }
+
+    .proteara {
+      display: block;
+      max-width: 100%;
+      margin-top: 70px;
+    }
+  }
+
+  .sup-facts {
+    position: relative;
+    z-index: 999;
+  }
+
+}
+
+// FIRST AND SECOND
+
+@media (max-width: 767px) {
+  .product-section-1 .primary-description .brand-bank {
+    display: none;
+  }
+  .primary-description .description-wrapper {
+    max-width: 400px;
+  }
+  .product-page .primary-description {
+    padding-top: 60px;
+  }
+  .primary-description .small-description .icon-text {
+    width: 25%;
+  }
+  .product-page .meter-page .primary-description .description-wrapper .small-title-description {
+    text-align: left;
+    padding-left: 10px;
+  }
+  .primary-description .big-description {
+    justify-content: flex-start;
+  }
+  .primary-description .big-description:nth-child(2) .icon {
+    margin-left: 0;
+  }
+  .primary-description .description-wrapper {
+    max-width: 400px;
+    float: none;
+    margin: 15px auto;
+  }
+  .views-bank-section .content-wrapper .all-views-bank {
+    display: none;
+  }
+  .views-bank-section .content-wrapper .move-content {
+    display: none;
+  }
+  .views-bank-section .content-wrapper {
+    margin-top: 7%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1001px) {
+  .product-section-1 {
+    .primary-description .brand-bank {
+      width: 250px !important;
+      margin-top: 5%;
+      margin-left: 2%;
+      img {
+        max-width: 250px !important;
+      }
+    }
+  }
+  .product-page .primary-description .big-description:first-child {
+    margin-bottom: 5% !important;
+  }
+  .product-page .meter-page .primary-description .description-wrapper .small-title-description {
+    margin-bottom: 9%;
+    margin-top: 9%;
+  }
+  .bullet-page .primary-description .play-abs {
+    width: 17%;
+    right: 3%;
+  }
+  .spritespin-canvas {
+    width: 216px !important;
+    height: 367px !important;
+  }
+  .views-bank-section .content-wrapper {
+    margin-top: 2%;
+    padding-left: 2%;
+    position: relative !important;
+  }
+  .views-bank-section .content-wrapper .all-logo {
+    margin-right: 1%;
+  }
+  .views-bank-section .content-wrapper .all-views-bank {
+    float: none;
+  }
+  .views-bank-section .content-wrapper .move-content {
+    z-index: 1000;
+  }
+  .views-bank-section .content-wrapper .move-content .progress-line {
+    float: none;
+    margin-top: 33px;
+    position: relative;
+    z-index: 10000;
+  }
+  .views-bank-section .content-wrapper .all-logo {
+    width: 100%;
+    float: right;
+    position: absolute;
+    top: 9%;
+    right: 0;
+
+    img {
+      float: right;
+      margin-right: 2%;
+      max-width: 300px
+    }
+  }
+  .views-bank-section .content-wrapper .move-content .progress-line {
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 1000px) {
+  .bullet-page .primary-description .play-btn-2 {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .product-page .section:first-child {
+    display: block;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1799px) {
+  .bullet-page .performance-section.custom {
+    padding-top: 50px !important;
+  }
+}
+
+@media (min-width: 1800px) {
+  .product-section-1 .logo-line {
+    width: 300px;
+  }
+  .primary-description {
+    max-width: 1300px !important;
+  }
+  .primary-description .description-wrapper {
+    margin-left: 140px;
+  }
+  .play-btn-2 {
+    display: block !important;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 31%;
+    right: 0;
+  }
+  .primary-description .brand-bank {
+    margin-top: 2%;
+  }
+  .primary-description h1 {
+    font-size: 70px;
+  }
+  .primary-description .big-description span {
+    line-height: 1.4;
+    font-size: 18px;
+  }
+  .primary-description .description-wrapper {
+    margin-top: 7%;
+  }
+  .product-page .meter-page .primary-description .description-wrapper .small-title-description {
+    margin-top: 11%;
+    margin-bottom: 11%;
+    font-size: 32px;
+  }
+  .product-page .primary-description .big-description:first-child {
+    margin-bottom: 10% !important;
+  }
+  .bullet-page .primary-description .play-abs {
+    top: 0;
+    z-index: 1000;
+  }
+  .product-page .primary-description {
+    padding-top: 5%;
+  }
+  .meter-page .meter-microscope {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    h2 {
+      padding-top: 70px;
+    }
+  }
+}
+
+// THIRD SCREEN 
+
+@media (max-width: 991px) {
+  .bullet-page .meter-content .hydro-block {
+    display: none;
+  }
+  .meter-page .content-wrapper.meter-content {
+    padding-top: 3%;
+    height: auto;
+  }
+  .meter-page .content-wrapper.meter-content h2 {
+    font-size: 35px;
+  }
+  .meter-page .serving-info {
+    display: none;
+  }
+  .product-page .meter-page .content-wrapper.meter-content h2 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .meter-page .content-wrapper.meter-content {
+    padding-top: 32px;
+    padding-left: 15%;
+  }
+}
+
+@media (max-width: 530px) {
+  .product-page .anabolic-section .sub-title {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .anabolic-section .formula {
+    display: none;
+  }
+  .product-page .anabolic-section .description-list {
+    margin-top: 60px;
+  }
+  .anabolic-section .three-list-block {
+    display: none;
+  }
+  .product-page .primary-description {
+    padding-bottom: 30px;
+  }
+  .most-verstaile .vertical-sub-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  .product-page .anabolic-section .triangle {
+    display: none;
+  }
+  .anabolic-section .three-list-block {
+    width: 522px !important;
+    margin-top: 40px;
+    position: relative;
+    padding-right: 20px;
+  }
+  .anabolic-section .content-wrapper.custom {
+    position: static !important;
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1799px) {
+  .meter-page .content-wrapper.meter-content {
+    padding-top: 32px;
+  }
+  .bullet-page .meter-content .black-box {
+    width: 550px;
+  }
+  .bullet-page .meter-content .hydro-block {
+    max-width: 250px;
+    top: 40%;
+    right: 2%;
+  }
+  .anabolic-section .formula {
+    width: 808px !important;
+    position: absolute !important;
+    top: 172px !important;
+    right: 0 !important;
+  }
+}
+
+@media (min-width: 1800px) {
+  .meter-page .content-wrapper.meter-content {
+    position: static;
+    height: auto;
+    margin: auto;
+  }
+  .content-wrapper {
+    max-width: 1440px;
+  }
+  .meter-page .content-wrapper.meter-content h2 {
+    font-size: 60px;
+  }
+  .product-page .meter-page .content-wrapper.meter-content h2 {
+    margin-bottom: 100px;
+  }
+  .product-page .most-verstaile p {
+    font-size: 20px;
+  }
+  .bullet-page .meter-content .black-box {
+    width: 690px;
+    display: block;
+  }
+  .bullet-page .meter-content .hydro-block {
+    max-width: 500px;
+    top: 300px;
+    right: 140px;
+  }
+
+  .meter-page .info-list li {
+    font-size: 17px !important;
+  }
+
+  .product-page .meter-page .meter-scheme {
+    top: -200px;
+    width: 85%;
+    margin-left: 7.5%;
+  }
+  .section-microscope .triangle {
+    bottom: -425px;
+  }
+  .product-page .meter-page .info-list--top {
+    top: 195px;
+    left: 650px;
+  }
+  .product-page .meter-page .info-block {
+    position: absolute;
+    top: 500px;
+    left: 485px;
+    box-sizing: border-box;
+  }
+  .product-page .meter-page .info-list--bottom {
+    bottom: 100px;
+    right: 505px;
+    width: 400px;
+    max-width: 100%;
+  }
+
+  .section .content-wrapper.custom {
+    position: static;
+    height: auto;
+    padding-top: 60px;
+  }
+  .most-verstaile h2 {
+    margin-bottom: 60px;
+  }
+  .most-verstaile .two-block-wrap {
+    margin-top: 60px;
+  }
+  .product-page .most-verstaile {
+    padding-bottom: 0;
+  }
+  .meter-page .content-wrapper.meter-content {
+    padding-bottom: 0;
+  }
+  .section-microscope .list-block-wrapper {
+    margin-left: 150px;
+  }
+  .section-microscope .list-block {
+    margin-left: 100px;
+  }
+  .product-page .section-microscope .kosuta-omega {
+    margin-right: 150px;
+    max-width: 340px;
+    margin-top: -50px;
+  }
+  .product-page .performance-section .image-proteara {
+    width: 800px;
+    position: absolute;
+    right: 80px;
+    bottom: 115px;
+  }
+  .anabolic-section .formula {
+    width: 1145px !important;
+    position: absolute;
+    top: 245px !important;
+    right: 0;
+  }
+  .product-page .anabolic-section .sub-title {
+    margin-top: 70px;
+  }
+  .anabolic-section .list li {
+    margin-bottom: 75px !important;
+  }
+
+  .kas-page .section-microscope .triangle {
+    bottom: -422px;
+  }
+
+  .kas-page.product-page {
+    .section-microscope .content-wrapper {
+      padding-left: 150px;
+    }
+    .section-microscope .three-columns-block:nth-child(1) span {
+      margin-top: 110px;
+    }
+    .section-microscope .three-columns-block:nth-child(2) span {
+      margin-top: 90px;
+    }
+    .section-microscope .big-title {
+      font-size: 35px;
+    }
+    .section-microscope .big-title span:before {
+      top: auto;
+      bottom: 15px;
+    }
+    .section-microscope .big-title span:after {
+      top: auto;
+      bottom: 15px;
+    }
+    .section-microscope .list-block {
+      margin-left: 37px;
+    }
+    .section-microscope .child-2-list ul {
+      padding: 10px;
+
+      li {
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+    }
+  }
+}
+
+// FOURTH SCREEN
+
+@media (max-width: 480px) {
+  .meter-page .advantages-list {
+    display: none;
+  }
+  .meter-page .bordered-button {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .bullet-page .section-microscope .left-col {
+    float: none;
+    width: 100%;
+    padding-left: 10%;
+  }
+  .bullet-page .section-microscope .right-col {
+    float: none;
+    width: 100%;
+    padding-left: 10%;
+  }
+  .meter-page .meter-microscope .content-wrapper {
+    position: static;
+  }
+  .bullet-page .section-microscope .right-col-article {
+    margin-bottom: 0;
+  }
+  .section-microscope .three-columns-block:nth-child(2) span {
+    margin-left: 0;
+  }
+  .product-page .section-microscope .kosuta-omega {
+    display: none;
+  }
+  .product-page .section-microscope .big-title {
+    margin-top: 20px !important;
+    margin-left: 0 !important;
+  }
+  .performance-section .content-wrapper {
+    position: static !important;
+    padding-top: 60px;
+  }
+  .product-page .performance-section .image-proteara {
+    display: none;
+  }
+  .fp-section.fp-table {
+    height: auto !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .product-page {
+    .nav-bar {
+      top: 0 !important;
+
+      &.nav-bar-visible {
+        .nav {
+          top: 45px;
+        }
+      }
+    }
+  }
+  .product-section-1 .logo-line {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .content-wrapper.custom {
+    position: static !important;
+    height: auto !important;
+  }
+  .performance-section .image-proteara img {
+    display: none;
+  }
+  .content-wrapper {
+    height: auto !important;
+    position: static !important;
+  }
+  .product-page.bullet-page .formula-section .big-triangle {
+    display: none;
+  }
+  .section-microscope .list-block {
+    float: none !important;
+    margin-left: 0 !important;
+  }
+  .section-microscope .list-block-wrapper {
+    float: none !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+  .section-microscope .triangle {
+    display: none;
+  }
+  .product-page .views-bank-section {
+    padding: 20px 0;
+  }
+  .fp-section.fp-table {
+    height: auto !important;
+  }
+  .product-page .section.views-bank-section .kasuta-table-horizontal img {
+    position: static !important;
+  }
+  .performance-section .two-block.margin-left {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .section-microscope .triangle {
+    display: none;
+  }
+  .bullet-page .section-microscope .left-col-article .advantages-list {
+    display: none;
+  }
+  .bullet-page .section-microscope .left-col-article .buttons-row {
+    display: none;
+  }
+}
+
+@media(max-width: 1060px) {
+  .performance-section .three-top-block-wrapper {
+    display: none;
+  }
+}
+
+@media(min-width: 992px) and (max-width: 1799px) {
+  .meter-page .meter-microscope .content-wrapper {
+    height: 650px;
+  }
+  .bullet-page .section-microscope .left-col {
+    transform: scale(.9);
+  }
+  .bullet-page .section-microscope .right-col {
+    transform: scale(.9);
+  }
+  .section-microscope .triangle {
+    right: -460px;
+  }
+  .meter-page .meter-microscope .content-wrapper {
+    position: absolute;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .meter-page .text-row img {
+    height: 100px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .meter-page .text-row p.bottom-text {
+    display: block;
+    font-size: 18px;
+    max-width: 400px;
+  }
+  .meter-page .text-row p.top-text {
+    font-size: 18px;
+    display: block;
+    max-width: 400px;
+  }
+  .product-page .meter-page .bordered-text {
+    margin-left: 10px;
+  }
+  .meter-page .serving-info {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  .meter-page .text-row img {
+    height: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .performance-section .triangle {
+    display: none;
+  }
+  .product-page .anabolic-section .description-list {
+    display: none;
+  }
+  .meter-page .text-row p.bottom-text {
+    vertical-align: top;
+    font-size: 18px;
+  }
+  .meter-page .text-row p.top-text {
+    font-size: 18px;
+  }
+  .product-page .meter-page .bordered-text {
+    margin-left: 10px;
+  }
+  .product-page .most-verstaile .bottom-text {
+    display: none;
+  }
+  .product-page .sam-table {
+    display: none;
+  }
+  .most-verstaile .two-block {
+    float: none;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .meter-page .meter-microscope .content-wrapper {
+    height: auto;
+    position: static;
+  }
+  .section-microscope h2 {
+    font-size: 34px;
+    letter-spacing: 1px;
+    margin-bottom: 50px !important;
+
+    span {
+      margin-top: 7px !important;
+      padding-top: 12px !important;
+      font-size: 25px !important;
+    }
+  }
+  .product-page.bullet-page .section-microscope .left-col-article {
+    margin-bottom: 60px;
+  }
+  .bullet-page .section-microscope .alanine-img {
+    width: 260px;
+  }
+  .bullet-page .section-microscope .acetyl-img {
+    width: 500px;
+  }
+  .bullet-page .section-microscope .citrulline-img {
+    width: 380px;
+  }
+  .bullet-page .section-microscope .taurine-img {
+    width: 500px;
+  }
+  .bullet-page .section-microscope .left-col .info-list {
+    max-width: 528px;
+
+    li {
+      font-size: 18px;
+    }
+  }
+  .bullet-page .section-microscope .right-col-article .info-list {
+    max-width: 450px;
+
+    li {
+      font-size: 18px;
+    }
+  }
+  .bullet-page .section-microscope .right-col-article .info-list {
+    margin-left: 80px;
+  }
+  .bullet-page .section-microscope .right-col {
+    padding-left: 150px;
+  }
+  .bullet-page .section-microscope .right-col-article {
+    &:first-child {
+      margin-bottom: 120px;
+    }
+  }
+  .meter-page .performance-section .content-wrapper.custom {
+    height: auto;
+    position: static;
+    padding-top: 60px;
+  }
+  .meter-page .performance-section .left-article .heading {
+    font-size: 35px;
+  }
+  .meter-page .bordered-text {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  .meter-page .performance-section .bordered-list {
+    font-size: 18px;
+  }
+  .product-page .meter-page .performance-section .proteara-img {
+    max-width: 120%;
+  }
+}
+
+// FIFTH SCREEN
+
+@media (max-width: 1024px) {
+  .bullet-page .performance-section .info-block.right-top {
+    position: static;
+    margin-top: 20px;
+  }
+  .bullet-page .performance-section .info-block.left-top {
+    position: static;
+    margin-top: 20px;
+  }
+  .bullet-page .performance-section .info-block.left-bottom {
+    position: static;
+    margin-top: 20px;
+  }
+  .bullet-page .performance-section .info-block.right-bottom {
+    position: static;
+    margin-top: 20px;
+  }
+  .product-page.bullet-page .performance-section .herbs {
+    display: none;
+    margin-top: 20px;
+  }
+  .bullet-page .performance-section .buttons-row {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .product-page.bullet-page .performance-section .herbs {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .bullet-page .performance-section .info-block.right-top {
+    right: 20px;
+  }
+  .bullet-page .performance-section .info-block.right-bottom {
+    right: 10px;
+    left: auto !important;
+  }
+  .bullet-page .performance-section .bordered-list {
+    font-size: 11px;
+    padding: 10px 10px;
+  }
+  .product-page.bullet-page .performance-section .info-block.left-top {
+    left: 5px;
+  }
+  .bullet-page .performance-section .info-block.left-bottom {
+    left: 5px;
+  }
+}
+
+@media (max-width: 991px) {
+  .meter-page .section-microscope h2 {
+    z-index: 10000;
+    position: relative;
+  }
+  .product-page .meter-page .meter-scheme {
+    display: none;
+  }
+  .product-page .meter-page .info-list--top {
+    position: static;
+    max-width: 400px;
+    margin-top: 80px;
+    li {
+      position: static;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+  .product-page .meter-page .info-block {
+    position: static;
+    max-width: 600px;
+    margin-top: 50px;
+
+    li {
+      position: static;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+  .product-page .meter-page .info-list--bottom {
+    position: static;
+    max-width: 400px;
+    margin-top: 50px;
+    li {
+      position: static;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .product-page .meter-page .info-block {
+    left: 20px;
+  }
+  .meter-page .meter-microscope h2 {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .meter-page .section-microscope h2 {
+    z-index: 10000;
+    position: relative;
+  }
+  .product-page .meter-page .meter-scheme {
+    top: 0;
+  }
+  .product-page .meter-page .info-list--top {
+    top: 80px;
+  }
+}
+
+@media(max-width: 1800px) {
+  .bullet-page .performance-section .heading {
+    padding-top: 0 !important;
+  }
+  .bl-page.product-page.bullet-page .performance-section .info-block.left-top {
+    top: 130px;
+  }
+
+  .bl-page.product-page.bullet-page .performance-section .info-block.right-top {
+    max-width: none;
+    top: 210px;
+    bottom: auto;
+    left: auto;
+  }
+}
+
+@media (min-width: 1800px) {
+
+  .bl-page.bullet-page .performance-section .content-wrapper {
+    margin-top: 0;
+  }
+  .bl-page.product-page.bullet-page .performance-section .herbs {
+    width: 800px;
+  }
+  .bl-page.bullet-page .performance-section .info-block.left-top {
+    max-width: none;
+  }
+  .bl-page.bullet-page .performance-section .info-block .block-heading {
+    font-size: 35px;
+  }
+  .bl-page.bullet-page .performance-section .bordered-list {
+    font-size: 16px;
+  }
+  .bl-page.product-page.bullet-page .performance-section .herbs {
+    margin: 290px auto;
+  }
+  .bl-page.product-page.bullet-page .performance-section .info-block.left-top {
+    top: 175px;
+  }
+  .bl-page.bullet-page .performance-section .info-block.left-bottom {
+    max-width: none;
+    bottom: -220px;
+    top: auto;
+  }
+  .bl-page.bullet-page .performance-section .info-block.right-bottom {
+    max-width: none;
+    bottom: -210px;
+    right: -150px;
+    top: auto;
+    left: auto;
+  }
+  .bl-page.product-page.bullet-page .performance-section .info-block.right-top {
+    max-width: none;
+    top: 230px;
+    bottom: auto;
+    left: auto;
+  }
+}
+
+// SIXTH SCREEN
+
+@media (max-width: 768px) {
+  .bullet-page .performance-section.black-bg .bottom-scheme {
+    display: none;
+  }
+  .bullet-page .performance-section.black-bg .big-text span {
+    padding-right: 0;
+    text-align: left;
+    font-size: 22px;
+  }
+  .bullet-page .performance-section.black-bg .big-text {
+    font-size: 22px;
+    margin-bottom: 20px !important;
+  }
+  .bullet-page .performance-section.black-bg .blue-text {
+    margin-bottom: 20px;
+  }
+  .bullet-page .performance-section.black-bg .simple-text {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .product-page.bullet-page .formula-section .big-triangle {
+    top: 0 !important;
+    height: 100%;
+  }
+  .meter-page .performance-section .right-col {
+    display: none;
+  }
+  .product-page .meter-page .performance-section .left-col {
+    width: 100%;
+  }
+  .bullet-page .performance-section.black-bg .bottom-scheme {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1799px) {
+  .bullet-page .performance-section.black-bg .right-scheme {
+    margin-top: 22%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .product-page.bullet-page .performance-section.black-bg .heading {
+    font-size: 45px;
+    margin-bottom: 60px;
+  }
+  .bullet-page .performance-section.black-bg .text-row {
+    margin-bottom: 60px;
+  }
+  .bullet-page .performance-section.black-bg .big-text span {
+    padding-right: 170px;
+  }
+  .bullet-page .performance-section.black-bg .simple-text {
+    font-size: 20px;
+  }
+  .product-page.bullet-page .performance-section.black-bg .big-text {
+    margin-bottom: 45px;
+  }
+  .product-page.bullet-page .performance-section.black-bg .buttons-row {
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+  .bullet-page .performance-section.black-bg .sub-heading {
+    font-size: 30px;
+  }
+  .product-page.bullet-page .formula-section .big-triangle {
+    top: -320px;
+  }
+  .meter-page .performance-section .right-col {
+    width: 45%;
+  }
+  .bullet-page .performance-section.black-bg .right-scheme {
+    margin-top: 135px;
+  }
+  .bullet-page .performance-section.black-bg .bottom-scheme {
+    position: relative;
+    top: -75px;
+    left: 50px;
+  }
+}
+
+// SEVENTH SCREEN
+@media (max-width: 480px) {
+  .bullet-page .formula-section .right-col .vitamins {
+    display: none;
+  }
+  .bullet-page .formula-section .left-col .minerals {
+    display: none;
+  }
+  .sup-facts h2 {
+    font-size: 35px !important;
+  }
+  .primary-description .small-description .icon-text {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 660px) {
+  .bullet-page .formula-section .left-col {
+    width: 100%;
+  }
+  .bullet-page .formula-section .right-col {
+    width: 100%;
+  }
+  .bullet-page .formula-section .left-col .light-text {
+    display: none;
+  }
+  .bullet-page .formula-section .left-col .bordered-text {
+    display: none;
+  }
+}
+
+@media (min-width: 1800px) {
+  .bullet-page .formula-section .right-col .vitamins {
+    margin-top: 0;
+  }
+
+  .bullet-page .formula-section .left-col .square-list {
+    font-size: 20px;
+  }
+
+  .bullet-page .formula-section .left-col .minerals {
+    margin-left: 0;
+  }
+  .bullet-page .formula-section .right-col .square-list {
+    font-size: 20px;
+    top: -35px;
+  }
+  .bullet-page .formula-section .content-wrapper {
+    margin-top: 0;
+  }
+  .product-page.bullet-page .formula-section .proteara {
+    margin-top: 80px;
+  }
+  .bullet-page .formula-section .left-col .light-text {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .product-page .section .fp-tableCell {
+    height: auto !important;
+  }
+}
+
+// EIGHTH SCREEN
+
+@media (max-width: 560px) {
+  .sup-facts div.three-block {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .sup-facts .three-block {
+    width: 50% !important;
+
+    &:nth-child(7) {
+      width: 100% !important;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .sup-facts h2 {
+    padding: 0 !important;
+  }
+}
+
+// SCANNING SCREEN
+
+//@media (max-width: 480px) {
+//  .scanning-table tr td {
+//    &:nth-child(3) {
+//      display: none;
+//    }
+//  }
+//}
+//
+//@media (max-width: 560px) {
+//  .scanning-table tr td {
+//    &:nth-child(4) {
+//      display: none;
+//    }
+//  }
+//}
+//
+//@media (max-width: 730px) {
+//  .scanning-table tr td {
+//    &:nth-child(5) {
+//      display: none;
+//    }
+//  }
+//}
+
+@media (max-width: 1000px) {
+  .scanning .row .left-side {
+    display: none;
+  }
+  .scanning .row .right-side {
+    width: 100% !important;
+  }
+}
+
+.views-bank-section {
+  @media (max-height: 660px) {
+    padding-top: 20px !important;
+  }
+  .content-wrapper {
+
+    @media (min-height: 780px) {
+      margin-top: 5%;
+    }
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.product-page {
+
+  .vertical-sub-nav {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    &:first-child {
+      top: 45px;
+      bottom: inherit;
+    }
+
+    &.is-fixed {
+      position: fixed !important;
+      z-index: 1000;
+    }
+    a {
+      background: $default-light-black-bg;
+      color: #fff;
+      font-size: $fontsize-base;
+      width: 170px;
+      height: 30px;
+      line-height: 31px;
+      display: block;
+      box-sizing: border-box;
+      padding-left: 10px;
+      position: relative;
+      margin-bottom: 10px;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 9px;
+        background: $default-light-black-bg;
+        height: 2px;
+        left: -14px;
+        top: 14px
+      }
+    }
+
+    &.custom {
+
+      @media (max-width: 1100px) {
+        display: none;
+      }
+      li:first-child {
+        @media (min-width: 1100px) {
+          margin-bottom: 40px;
+        }
+        @media (min-width: 1800px) {
+          margin-bottom: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .meter-page .meter-microscope {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .bullet-page .performance-section {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    h2.heading {
+      padding-top: 70px;
+
+      &.custom {
+        padding-top: 70px !important;
+      }
+    }
+  }
+
+  .bullet-page .performance-section.black-bg {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    h2.heading {
+      padding-top: 50px;
+      margin-bottom: 40px !important;
+    }
+  }
+}
+
+.vertical-sub-nav {
+  opacity: 0;
+  z-index: -1;
+  transition: .2s ease-in-out;
+
+  .sub-nav-wrapper {
+    height: 100%;
+    position: relative;
+    padding-top: 45px;
+    box-sizing: border-box;
+
+    ul {
+      height: 100%;
+    }
+  }
+
+  li {
+    transition: .5s ease-in-out;
+  }
+  &.is-fixed {
+    opacity: 1;
+    z-index: 1000;
+    height: 100%;
+    position: fixed !important;
+    left: 30px !important;
+    top: 0 !important;
+  }
+  &.first-top {
+    li:last-child {
+      position: absolute;
+      top: calc(100% - 45px);
+    }
+    li:nth-child(3) {
+      position: absolute;
+      top: calc(100% - 85px);
+    }
+    li:nth-child(2) {
+      position: absolute;
+      top: calc(100% - 125px);
+    }
+  }
+
+  &.second-top {
+    li:nth-child(2) {
+      bottom: auto;
+      top: 85px;
+    }
+  }
+
+  &.third-top {
+    li:nth-child(3) {
+      bottom: auto;
+      top: 125px;
+    }
+  }
+  &.fourth-top {
+    li:nth-child(4) {
+      bottom: auto;
+      top: 165px;
+    }
+  }
+}
+
+.product-section-1 {
+  position: absolute;
+  z-index: 999;
+  @media (max-width: 1024px) {
+    position: relative;
+  }
+}
+
+.product-page .section {
+  @media (max-width: 1024px) {
+    overflow: hidden;
+  }
+}

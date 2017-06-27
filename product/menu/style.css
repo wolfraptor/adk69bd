@@ -1,0 +1,126 @@
+
+.menu-top img{
+	  width: 45%;
+}
+.menu-bottom img {
+	  width: 30%;
+}
+.menu-top {
+	margin-top: 110px;
+}
+.menu-top p, .menu-bottom p{
+	margin-top: 20px;
+}
+#age:before,
+#menu .left li:before,
+.btline:after,
+header .toggle div:after,
+header .toggle div:before {
+    content: ''
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 90
+}
+header .toggle {
+    position: absolute;
+    top: 20px	;
+    right: 40px;
+    width: 34px;
+    height: 26px;
+    margin-bottom: 31px
+}
+header .toggle div {
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: #fff;
+    width: 100%;
+    height: 4px;
+    margin-top: 11px;
+    position: relative
+}
+#lang,
+.logo {
+    position: absolute
+}
+header .toggle div:after,
+header .toggle div:before {
+    position: absolute;
+    left: 0;
+    top: -7px;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 15px;
+    -webkit-transition: -webkit-transform .5s ease-out, top .5s ease-out;
+    -moz-transition: -moz-transform .5s ease-out, top .5s ease-out;
+    transition: transform .5s ease-out, top .5s ease-out
+}
+header .toggle.active div,
+header .toggle.active:hover div {
+    background-color: transparent
+}
+header .toggle div:after {
+    top: 7px
+}
+header .toggle div:before {
+    margin-bottom: 34px
+}
+header .toggle.active div:before {
+    transform: rotate(45deg);
+    top: 1px
+}
+header .toggle.active div:after {
+    transform: rotate(-45deg);
+    top: 1px
+}
+
+#lang a:hover,
+header #lang a.active {
+    color: #c3a17d!important
+}
+header.dark .toggle div,
+header.dark .toggle div:after,
+header.dark .toggle div:before {
+    background-color: #dda039;
+}
+header.dark .toggle:hover div,
+header.dark .toggle:hover div:after,
+header.dark .toggle:hover div:before {
+    background-color: #c3a17d
+}
+header.dark .toggle.active div {
+    background-color: transparent
+}
+header.dark .toggle.active div:after,
+header.dark .toggle.active div:before {
+    background-color: #fff
+}
+header.dark .toggle.active:hover div {
+    background-color: transparent
+}
+header.dark .toggle.active:hover div:after,
+header.dark .toggle.active:hover div:before {
+    background-color: #c3a17d
+}
+#menu {
+    z-index: 80;
+    position: fixed;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    background-color: #15181D
+}
+
+#menu .box {
+	height: auto;
+    position: absolute;
+    left: 0%;
+    top: 12%;
+}

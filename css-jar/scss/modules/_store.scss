@@ -1,0 +1,631 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.store-page{
+  @media (min-width: 750px) and (max-width: 1025px){
+    .pp-daaki-logo{
+      margin-top: 30px;
+    }
+  }
+  .pp-daaki-logo{
+    width: 300px;
+  }
+}
+
+.store-col-6{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $daaki-orange-color;
+  padding-top: 25px;
+  
+  @media (min-width: 1100px){
+    float: left;
+    width: 50%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: none;
+  }
+  
+  img{
+    max-width: 100%;
+  }
+}
+
+.store-section{
+  margin-top: 200px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  border-bottom: 1px solid $daaki-orange-color;
+  
+  
+  *{
+    box-sizing: border-box;
+  }
+  &__row{
+    @include clearfix;
+  }
+  
+  &__left{
+    
+    @media (min-width: 600px){
+      width: 40%;
+      float: left;
+    }
+    
+    @media (min-width: 1100px){
+      width: 40%;
+    }
+    
+    @media (min-width: 1100px){
+      max-height: 600px;
+    }
+    
+    @media (min-width: 1800px){
+      max-height: 720px;
+    }
+    
+    @media (min-width: 1200px){
+      width: percentage(570/1160);
+    }
+  }
+    
+  &__links{
+    @include clearfix;
+    width: 100%;
+    margin-top: 50px;
+
+    @media (min-width: 600px){
+      margin-top: 100px;
+      padding-left: 20px;
+    }
+    
+    @media (min-width: 1200px){
+      margin-top: 165px;
+    }
+  }
+
+  &__link{
+    border: 1px solid $daaki-orange-color;
+    font-size: 11px;
+    color: $daaki-orange-color;
+    line-height: 30px;
+    color: $daaki-orange-color;
+    float: left;
+    text-align: center;
+    width: 100px;
+    
+    
+    
+    @media (min-width: 1200px){
+      font-size: 13px;
+      width: 120px;
+    }
+    
+    
+    @media (min-width: 1800px){
+      width: 195px;
+    }
+    
+    &--align-right{
+      float: right;
+    }
+    
+    &--wide{
+      float: none;
+      width: 100%;
+      color: #fff;
+      margin-bottom: 20px;
+      display: block;
+      font-size: 11px;
+      
+      @media (min-width: 1200px){
+        font-size: 12px;
+      }
+    }
+  }
+  
+  &__right{
+    margin-bottom: 20px;
+    @media (min-width: 600px){
+      margin-bottom: 0;
+      float: right;
+      width: 60%;
+      padding-left: 15px;
+    }
+    
+    @media (min-width: 1100px){
+      float: left;
+      width: 60%;
+      padding-left: 0;
+    }
+    
+    @media (min-width: 1200px){
+      width: percentage(590/1160);
+      padding-top: 65px;
+    }
+  }
+  
+  &__bullet{
+    border-right: 1px solid $daaki-orange-color;
+  }
+  
+  &__kasuta{
+    border-top: 1px solid $daaki-orange-color;
+    border-right: 1px solid $daaki-orange-color;
+    padding-top: 70px;
+  }
+  
+  &__strides{
+    @include clearfix;
+    border-top: 1px solid $daaki-orange-color;
+    overflow: hidden;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    @media (min-width: 1100px){
+      height: 350px;
+    }
+    
+    img{
+      display: block;
+      width: 500px;
+      max-width: 100%;
+      position: relative;
+    }
+    
+    .store-section__product{
+      display: none;
+      
+      @media (min-width: 600px){
+        top: 20px;
+        display: block;
+      }
+      
+      @media (min-width: 1100px){
+        top: 0;
+      }
+      @media (min-width: 1800px){
+        width: 700px;
+        top: -60px;
+      }
+    }
+    
+    .store-section__logo{
+      margin-left: auto;
+      margin-bottom: 0;
+      margin-top: 50px;
+    }
+    
+    .store-section__links{
+      margin-top: 50px;
+      
+      @media (min-width: 600px){
+        margin-top: 100px;
+      }
+      
+      @media (min-width: 1800px){
+        margin-top: 125px;
+      }
+    }
+    
+    .store-section__link{
+      width: 100%;
+      display: block;
+      margin-left: 2px;
+      margin-right: 2px;
+      
+      @media (min-width: 1100px){
+        float: right;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 120px;
+      }
+    
+    &--align-right{
+      float: none;
+      @media (min-width: 1100px){
+        float: right;
+      }
+    }
+    }
+    
+    .store-section__link--wide{
+      width: 100%;
+      margin-top: 20px;
+      display: block;
+      float: none;
+      @media (min-width: 1100px){
+        float: right;
+        width: 230px;
+        margin-top: 0;
+      }
+      
+      
+      @media (min-width: 1200px){
+        width: 255px;
+      }
+    }
+  }
+  
+  &__col{
+    @media (min-width: 600px){
+      float: left;
+      width: 50%;
+    }
+  }
+  
+  &__starter{
+    padding-top: 70px;
+    border-top: 1px solid $daaki-orange-color;
+    
+    
+    .store-section__logo{
+      max-width: 400px;
+      margin-left: auto;
+      margin-bottom: 50px;
+      @media (min-width: 600px){
+        margin-bottom: 150px;
+      }
+    }
+    
+    .store-section__link--wide{
+      width: 100%;
+      @media (min-width: 600px){
+        width: 240px;
+        float: left;
+      }
+      @media (min-width: 1200px){
+        width: 255px;
+      }
+      
+      @media (max-width: 599px){
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+    }
+    .store-section__product{
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: 600px;
+      
+      @media (min-width: 1800px){
+        width: 800px;
+      }
+    }
+    .store-section__links{
+      margin-top: 45px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 575px;
+      
+      @media (max-width: 1100px){
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      @media (min-width: 1800px){
+        max-width: 755px;
+      }
+    }
+    
+    .store-section__link{
+      
+      @media (min-width: 600px){
+        float: left;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      
+      @media (min-width: 1200px){
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+    
+  }
+  
+  &__meter, &__bullet{
+    padding-top: 15px;
+  }
+  &__meter{
+    padding-bottom: 12px !important;
+  }
+  
+  &__logo{
+    margin-bottom: 65px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    @media (min-width: 600px){
+      margin-left: 0;
+      margin-right: 0;
+    }
+    
+    &--kasuta{
+      margin-bottom: 100px;
+    }
+    
+    @media(min-width: 600px) and (max-width: 1199px){
+      width: 150px;
+      margin-left: 0;
+    }
+    
+    @media (max-width: 1100px){
+      width: 250px;
+    }
+  }
+  
+  &__bank{
+    width: 295px;
+    display: none;
+    
+    @media (min-width: 600px){
+      display: block;
+    }
+    
+    @media (min-width: 1100px){
+      width: 280px;
+    }
+    
+    @media (min-width: 1800px){
+      width: 380px;
+    }
+  }
+  
+  &__suplements{
+    display: block;
+    
+    @media (min-width: 600px){
+      margin-top: -20px;
+    }
+  }
+  
+}
+
+
+.store-group{
+  @include clearfix;
+  margin-bottom: 30px;
+  
+  &--align-center{
+    
+    @media (min-width: 1800px){
+      text-align: left;
+    }
+  }
+  
+  &__label{
+    color: $daaki-orange-color;
+    font-family: 'Avenir LT Std 35 Light';
+    float: left;
+    font-size: 15px;
+    line-height: 38px;
+    
+    @media (min-width: 600px){
+      font-size: 17px;
+    line-height: 35px;
+    }
+  }
+  
+  &__units{
+    border: 1px solid #afafaf;
+    width: 35px;
+    height: 35px;
+    font-size: 17px;
+    color: #afafaf;
+    font-family: 'Avenir LT Std 35 Light';
+    background: none;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+  }
+  &__counter{
+    float: left;
+    margin-left: 60px;
+    line-height: 35px;
+    vertical-align: middle;
+    text-align: center;
+    
+    &::selection {
+      background: none; /* WebKit/Blink Browsers */
+    }
+  &::-moz-selection {
+    background: none; /* Gecko Browsers */
+  }
+    
+    & *::selection {
+      background: none; /* WebKit/Blink Browsers */
+    }
+  & *::-moz-selection {
+    background: none; /* Gecko Browsers */
+  }
+  }
+  
+  &__minus{
+    font-family: 'Avenir LT Std 35 Light';
+    border: 1px solid #afafaf;
+    color: #afafaf;
+    font-size: 22px;
+    height: 35px;
+    width: 35px;
+    line-height: 28px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    cursor: pointer;
+  }
+  
+  &__plus{
+    font-family: 'Avenir LT Std 35 Light';
+    border: 1px solid #afafaf;
+    color: #afafaf;
+    font-size: 30px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 31px;
+    vertical-align: middle;
+    margin-top: -2px;
+    cursor: pointer;
+  }
+  
+  &__old-price{
+    font-family: 'Avenir LT Std 35 Light';
+    font-size: 20px;
+    position: relative;
+    line-height: 25px;
+    vertical-align: middle;
+    display: inline-block;
+    
+    &:before{    
+      content: '';
+      position: absolute;
+      width: 120%;
+      height: 1px;
+      background: #ff6600;
+      top: 12px;
+      right: -5px;
+      transform: rotate(15deg);
+    }
+    
+    &:after{    
+      content: '';
+      position: absolute;
+      width: 120%;
+      height: 1px;
+      background: #ff6600;
+      top: 12px;
+      right: -5px;
+      transform: rotate(-15deg);
+    }
+  }
+  &__price{
+    font-family: 'Avenir LT Std 35 Light';
+    font-size: 20px;
+    position: relative;
+    line-height: 25px;
+    vertical-align: middle;
+    display: inline-block;
+    color: $daaki-orange-color;
+  }
+  
+  &__discount{
+    display: inline-block;
+    margin-left: 13px;
+    margin-right: 10px;
+    
+    .arrow-box{
+      background: url('../images/arrow.png') center center no-repeat;
+      background-size: 12px;
+      height: 25px;
+      width: 25px;
+      border: 1px solid $daaki-orange-color;
+      display: inline-block;
+      vertical-align: middle;
+      transform: rotate(-90deg);
+    }
+  }
+    
+    &__discount-value{
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 25px;
+      color: #000;
+      font-size: 17px;
+      font-family: 'Avenir LT Std 95 Black';
+      background: $daaki-orange-color;
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+}
+
+.store-dropdown{
+  font-family: 'Avenir LT Std 35 Light';
+  color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid $daaki-orange-color;
+  background: #000;
+  float: right;
+  position: relative;
+  margin-right: 37px;
+  width: 160px;
+  font-size: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  
+  
+  @media (min-width: 1300px){
+    width: 65%;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  &__item{
+    line-height: 35px;
+  }
+    
+  &:before{
+    position: absolute;
+    content: '';
+    background: url('../images/arrow.png') center center no-repeat;
+    background-size: 16px;
+    right: -40px;
+    top: -1px;
+    height: 35px;
+    width: 35px;
+    border: 1px solid $daaki-orange-color;
+  }
+  
+  &__items{
+    display: none;    
+    position: absolute;
+    z-index: 1000;
+    background: #000;
+    width: 100%;
+    width: calc(100% + 2px);
+    left: -1px;
+    border: 1px solid $daaki-orange-color;
+    border-top: none;
+  }
+  
+  &__item{
+    padding-left: 10px;
+    border-top: 1px solid $daaki-orange-color;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+    &:hover{
+      background: rgba(183, 183, 183, 0.36);
+    }
+    @media (min-width: 1200px){
+      padding-left: 15px;
+    }
+  }
+  
+  &__value{
+    line-height: 35px;
+  }
+}
+

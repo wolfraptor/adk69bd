@@ -1,0 +1,100 @@
+.sup-facts {
+  padding: 60px 0;
+  background: url("../images/sup-facts-bg.jpg") no-repeat center;
+  background-size: cover;
+  .content-wrapper {
+    max-width: 1160px;
+  }
+  h2 {
+    float: right;
+    border-bottom: 1px solid #fff;
+    padding: 0 80px 0 200px;
+    font-size: $daaki-font-size-h2;
+    font-family: $font-avenir-black;
+    text-transform: uppercase;
+  }
+  .small-text {
+    float: right;
+    padding: 30px 0;
+    font-family: $font-avenir-light;
+
+  }
+  .three-block {
+    width: 33.33%;
+    padding: 0 10px;
+    float: left;
+    box-sizing: border-box;
+    img {
+      width: 100%;
+    }
+  }
+  .description-block {
+    h3 {
+      font-size: $daaki-font-size-h3 /2;
+      font-family: $font-avenir-heavy;
+      padding: 10px 0 6px 10px;
+    }
+    p {
+      padding: 13px 10px;
+      font-family: $font-avenir-book;
+      font-size: $daaki-font-size-h4 / 2;
+      line-height: 18px;
+      background: #fff;
+      color: #000;
+    }
+  }
+  .col-title {
+    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    padding: 10px 0 8px 15px;
+    font-family: $font-avenir-heavy;
+    font-size: $daaki-font-size-h3 / 2;
+  }
+  .square-list {
+    list-style-type: square;
+    margin-left: 30px;
+    margin-top: 30px;
+    li {
+      margin-bottom: 25px;
+    }
+    span {
+      display: block;
+      padding-left: 8px;
+      margin-top: -12px;
+      line-height: 17px;
+      font-size: $daaki-font-size-h4 / 2;
+      font-family: $font-avenir-book;
+    }
+  }
+  .square-list-white {
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 20px;
+    .col-title {
+      border-color: #000;
+      color: #000;
+      margin-top: 5px;
+    }
+    ul {
+      color: #000;
+    }
+    span {
+      color: #000;
+    }
+  }
+  .sub-title-text {
+    display: block;
+    margin-bottom: 30px;
+    padding-left: 8px;
+    padding-top: 8px;
+    line-height: 17px;
+    font-size: $daaki-font-size-h4 / 2;
+    font-family: $font-avenir-book;
+  }
+  .last-list{
+    ul{
+      list-style: none;
+      margin-left: 10px;
+    }
+  }
+}

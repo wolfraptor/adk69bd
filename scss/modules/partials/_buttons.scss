@@ -1,0 +1,17 @@
+.default-btn{
+  color: $daaki-orange-color;
+  font-size: $fontsize-base;
+  border: 1px solid $daaki-orange-color;
+  width: 107px;
+  height: 30px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 27px;
+  font-size: $daaki-font-size-h3/3 ;
+  font-family: $canal-demi;
+  &:hover{
+    background: $daaki-orange-color;
+    color: $default-background-color;
+  }
+}

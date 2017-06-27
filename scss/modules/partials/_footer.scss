@@ -1,0 +1,351 @@
+footer {
+  position: relative;
+  .footer-content-wrapper {
+    height: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    @media (max-width: 1100px) {
+      display: block;
+    }
+  }
+  .footer-logo {
+    width: 300px;
+    height: 75px;
+    display: block;
+    margin: 60px auto 0 auto;
+    background: url("../images/daaki-logo.png") no-repeat center;
+    background-size: contain;
+    // @media(max-width: 1500px) {
+    //   width: 200px;
+    //   height: 50px;
+    // }
+  }
+  .social-block {
+    width: 1152px;
+    margin: 0 auto;
+    @media(max-width: 1500px) {
+      width: 1120px;
+    }
+    @media(max-width: 1300px) {
+      width: 840px;
+    }
+    @media(max-width: 900px) {
+      width: 100%;
+    }
+    ul {
+      margin-top: 45px;
+      overflow: hidden;
+      li {
+        display: block;
+        box-sizing: border-box;
+        max-width: 288px;
+        width: 100%;
+        height: 111px;
+        float: left;
+        border: 1px solid #484848;
+        text-align: right;
+        line-height: 111px;
+        padding-right: 45px;
+        @media(max-width: 1500px) {
+          max-width: 280px;
+          width: 100%;
+          height: 80px;
+          line-height: 80px;
+          padding-right: 55px;
+        }
+        @media(max-width: 1300px) {
+          max-width: 210px;
+          width: 100%;
+          height: 60px;
+          line-height: 60px;
+          padding-right: 45px;
+        }
+        @media(max-width: 900px) {
+          float: none;
+          margin: 0 auto 5px auto;
+        }
+        @media(max-width: 767px) {
+          display: block;
+          margin-bottom: 10px;
+        }
+        a {
+          color: $dark-gray;
+          margin: -3px;
+          @media(max-width: 1440px) {
+            font-size: 20px;
+          }
+          @media(max-width: 1440px) {
+            font-size: 15px;
+          }
+
+          @media(max-width: 767px) {
+            width: 180px;
+            display: block;
+            height: 40px;
+            line-height: 42px;
+            margin: 0 auto;
+            padding: 0;
+          }
+          i {
+            font-size: 38px;
+            vertical-align: middle;
+            margin-right: 70px;
+            @media(max-width: 1500px) {
+              margin-right: 50px;
+            }
+            @media(max-width: 1300px) {
+              margin-right: 25px;
+              font-size: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .more-block {
+    margin: 100px 0 35px 0;
+    padding: 0 80px 0 80px;
+    box-sizing: border-box;
+    @media(max-width: 1360px) {
+      margin-top: 50px;
+    }
+    @media(max-width: 640px) {
+      padding: 0 20px;
+    }
+  }
+  .four-col-block {
+    width: 25%;
+    float: left;
+    @media(max-width: 1100px) {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+    @media(max-width: 767px) {
+      width: 100%;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .list-title {
+      font-size: 20px;
+      font-family: $font-avenir-roman;
+      border-bottom: 1px solid #ffffff;
+      margin-left: 150px;
+      white-space: nowrap;
+      letter-spacing: 2px;
+      @media(max-width: 1800px) {
+        margin-left: 80px;
+      }
+      @media(max-width: 1500px) {
+        font-size: 16px;
+        margin-left: 50px;
+      }
+      @media(max-width: 1300px) {
+        font-size: 14px;
+      }
+      @media(max-width: 767px) {
+        margin-left: 0;
+      }
+    }
+    ul {
+      margin-top: 20px;
+      padding-left: 150px;
+      box-sizing: border-box;
+      @media(max-width: 1800px) {
+        padding-left: 80px;
+      }
+      @media(max-width: 1500px) {
+        padding-left: 50px;
+      }
+      @media(max-width: 767px) {
+        padding-left: 0;
+      }
+      li {
+        margin-bottom: 14px;
+        a {
+          color: $dark-gray;
+          font-size: 14px;
+          @media(max-width: 1500px) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    img {
+      margin: 45px 0 0 150px;
+      width: 300px;
+      @media(max-width: 1800px) {
+        width: 230px;
+        margin-left: 80px;
+      }
+      @media(max-width: 1500px) {
+        margin-left: 50px;
+      }
+      @media(max-width: 767px) {
+        margin-left: 0;
+      }
+    }
+    .send-block {
+      margin-top: 40px;
+      margin-bottom: 50px;
+      box-sizing: border-box;
+      padding-left: 90px;
+      @media(max-width: 1300px) {
+        margin-top: 35px;
+        margin-bottom: 35px;
+      }
+      @media(max-width: 767px) {
+        padding-left: 0;
+      }
+      .send-us {
+        width: 100%;
+        display: inline-block;
+        font-size: 12px;
+        color: $dark-gray;
+        font-family: $font-avenir-light;
+        border: 2px solid $dark-gray;
+        padding: 7px 0;
+        text-align: center;
+        text-transform: uppercase;
+        @media(max-width: 1300px) {
+          font-size: 10px;
+        }
+
+      }
+    }
+    .send-block {
+      input {
+        background: transparent;
+        width: 78% !important;
+        float: left;
+        text-align: left !important;
+        padding-left: 15px !important;
+        box-sizing: border-box;
+        @media(max-width: 1500px) {
+          font-size: 10px;
+        }
+      }
+      button {
+        width: 18%;
+        float: right;
+        display: inline-block;
+        font-size: 12px;
+        color: $dark-gray;
+        font-family: $font-avenir-light;
+        border: 2px solid $dark-gray;
+        padding: 7px 0;
+        text-align: center;
+        text-transform: uppercase;
+        background: transparent;
+        @media(max-width: 1500px) {
+          font-size: 10px;
+        }
+      }
+    }
+    .col-p {
+      font-size: 12px;
+      color: $dark-gray;
+      font-family: $font-avenir-light;
+      padding-left: 90px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      margin-top: 25px;
+      @media(max-width: 767px) {
+        padding-left: 0;
+      }
+    }
+  }
+  .shout {
+    text-align: center;
+    .title-list {
+      position: absolute;
+      background: #000000;
+      top: -11px;
+      display: block;
+      z-index: 22;
+      left: 0;
+      font-size: 32px;
+      right: 0;
+      margin: auto;
+      width: 310px;
+      text-align: center;
+      color: #aaaaaa;
+      @media(max-width: 1500px) {
+        width: 230px;
+        font-size: 24px;
+        top: -9px;;
+      }
+    }
+    ul {
+      position: relative;
+      display: block;
+      border: 1px solid $daaki-orange-color;
+      padding: 27px 0 13px 0;
+      width: 385px;
+      margin: 0 auto;
+      font-size: 27px;
+      @media(max-width: 1500px) {
+        width: 100%;
+      }
+      @media(max-width: 1500px) {
+        font-size: 18px;
+      }
+    }
+    .footer-info-block {
+      display: inline-block;
+      border-bottom: 1px dashed $daaki-orange-color;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      span {
+        display: inline-block;
+        font-size: 28px;
+        margin-bottom: 15px;
+        @media(max-width: 1500px) {
+          font-size: 22px;
+        }
+      }
+      p {
+        font-size: 21px;
+        font-family: $font-avenir-light;
+        @media(max-width: 1500px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .reserved {
+    text-align: center;
+    color: $dark-gray;
+    padding: 15px 0;
+    font-size: 18px;
+    border-top: 1px dashed $light-gray;
+    @media(max-width: 1500px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.block-info-block {
+  width: 300px;
+  margin: 0 auto;
+  div,
+  span,
+  a,
+  p {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+  @media(max-width: 1500px) {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 60px;
+  }
+  @media(max-width: 767px) {
+    padding-left: 0;
+  }
+}

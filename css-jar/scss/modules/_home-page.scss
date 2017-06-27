@@ -1,0 +1,1036 @@
+.wrap {
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+.share-icon {
+  display: block;
+  font-size: 23px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 43px;
+  height: 43px;
+  background: url("../images/share-icon.png") no-repeat center top;
+  background-position: center 14px;
+  a {
+    color: #fff;
+    display: block;
+    width: 43px;
+    height: 43px;
+    text-align: center;
+    line-height: 49px;
+
+    &.custom {
+      pointer-events: none;
+    }
+
+    &:hover {
+      background: url("../images/share-icon.png") no-repeat center top $gray-line;
+      background-position: center 14px;
+    }
+  }
+
+}
+
+.social-list {
+  height: 0;
+  overflow: hidden;
+  transition: 0.33s;
+  display: block;
+  a {
+    display: block;
+    width: 43px;
+    height: 43px;
+    background: #333333;
+    text-align: center;
+    line-height: 49px;
+    margin-bottom: 1px;
+    &:hover {
+      background: $gray-line;
+    }
+  }
+}
+
+.show-share {
+  > a {
+    background: url("../images/share-icon.png") no-repeat center top #ffffff;
+    background-position: center -14px;
+    &:hover {
+      background: url("../images/share-icon.png") no-repeat center top #ffffff;
+      background-position: center -14px;
+    }
+
+    .fa-times {
+      display: inline-block;
+    }
+  }
+  .social-list {
+    height: 131px;
+    opacity: 1;
+  }
+}
+
+.video-block-hidden {
+  display: none !important;
+}
+
+.bottom-hidden {
+  .front {
+    transform: translateZ(0);
+  }
+  .bottom {
+    transform: rotateX(270deg) translateY(100px);
+    transform-origin: bottom center;
+  }
+}
+
+.video-block-visible {
+  display: table !important;
+}
+
+.logo-section {
+  background: url("../images/logo-section-bg.png") no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  //position: relative;
+  height: 100%;
+  .logo-block {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 150px;
+    text-align: center;
+    .logo {
+      width: 350px;
+      height: 104px;
+      display: inline-block;
+      background: url("../images/daaki-logo.png") no-repeat center;
+      background-size: contain;
+      @media (max-width: 480px) {
+        width: 90%;
+      }
+    }
+    h5 {
+      font-size: 20px;
+      color: $default-text-color;
+      margin-top: 50px;
+      letter-spacing: 5px;
+      text-align: center;
+      text-transform: uppercase;
+      @media (max-width: 1440px) {
+        margin-top: 25px;
+      }
+      @media (max-width: 1023px) {
+        margin-top: 0;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+.video-block-wapper {
+  background: url("../images/video-bg.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  //position: relative;
+  height: 100%;
+  .description-video {
+    @include absolute-center();
+    margin-top: 180px;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 22;
+    span {
+      font-size: $daaki-font-size-h4;
+      font-family: $font-avenir-roman;
+      letter-spacing: 3px;
+      @media (max-width: 1400px) {
+        font-size: $daaki-font-size-h1 / 4;
+      }
+    }
+    h1 {
+      font-size: $daaki-font-size-h1;
+      font-family: $font-avenir-black;
+      color: $daaki-orange-color;
+      margin-top: 32px;
+      letter-spacing: 6px;
+      @media (max-width: 1440px) {
+        margin-top: 30px;
+        font-size: $font-size-arrow-down * 2;
+      }
+      @media (max-width: 1023px) {
+        font-size: $daaki-font-size-h1 / 2;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.wrapp-top {
+  top: 0 !important;
+  //overflow: hidden !important;
+}
+
+.preloader-block {
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-transition: 0.33s;
+  -moz-transition: 0.33s;
+  -ms-transition: 0.33s;
+  -o-transition: 0.33s;
+  transition: 0.33s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.pre-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.video-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+    @media(max-width: 1025px) {
+      display: none;
+    }
+  }
+}
+
+.video-block-wapper-2 {
+  background: url("../images/video-bg-2.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  .description-video {
+    @include absolute-center();
+    margin-top: 180px;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 22;
+    @media (max-width: 1440px) {
+      margin-top: 160px;
+    }
+    span {
+      font-size: $daaki-font-size-h4;
+      letter-spacing: 6px;
+      @media (max-width: 1440px) {
+        font-size: $daaki-font-size-h5;
+      }
+      @media (max-width: 1023px) {
+        font-size: $daaki-font-size-h1 / 4;
+      }
+    }
+    h1 {
+      font-size: $daaki-font-size-h1/2;
+      color: $daaki-orange-color;
+      margin-top: 22px;
+      letter-spacing: 6px;
+
+      @media (max-width: 1440px) {
+        margin-top: 12px;
+        font-size: $daaki-font-size-h4;
+      }
+      @media (max-width: 1023px) {
+        margin-top: 10px;
+        font-size: $fontsize-base * 2;
+      }
+    }
+    h3 {
+      font-size: $daaki-font-size-h3;
+      color: $daaki-orange-color;
+      margin-bottom: 22px;
+      font-family: $font-avenir-light;
+      letter-spacing: 5px;
+      @media (max-width: 1440px) {
+        font-size: $font-size-arrow-down;
+        margin-bottom: 10px;
+      }
+      @media (max-width: 1023px) {
+        margin-bottom: 0px;
+        font-size: $daaki-font-size-h4;
+      }
+    }
+  }
+}
+
+.play-btn {
+  width: 70px;
+  height: 70px;
+  @include absolute-center();
+  font-size: $font-size-arrow-down*2;
+  color: $default-text-color;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.33s;
+  -moz-transition: 0.33s;
+  -ms-transition: 0.33s;
+  -o-transition: 0.33s;
+  transition: 0.33s;
+  z-index: 22;
+  background: url("../images/play-btn.png") no-repeat center center;
+  background-size: contain;
+  &:hover {
+    width: 100px;
+    height: 100px;
+    font-size: $font-size-arrow-down*2.5;
+    line-height: 170px;
+  }
+}
+
+.card-and-social {
+  position: absolute;
+  right: 40px;
+  top: 0;
+  @media (max-width: 1024px) {
+    right: 65px;
+    top: 5px;
+  }
+  @media (max-width: 767px) {
+    right: 70px !important;
+    top: 0 !important;
+  }
+  .share-icon {
+    color: #fff;
+    display: block;
+    font-size: $font-size-icons;
+    position: relative;
+
+  }
+}
+
+.arrow-down {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 22;
+  background: url("../images/arrow-down.png") no-repeat center;
+}
+
+.title-block {
+  height: 50%;
+  background: url("../images/section-4-bg.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  letter-spacing: 7px;
+  div {
+    @include absolute-center();
+    font-size: $daaki-font-size-h5 * 4;
+    line-height: 220px;
+    font-family: $font-avenir-roman;
+    @media (max-width: 1440px) {
+      font-size: $daaki-font-size-h2;
+      line-height: 139px;
+    }
+    @media (max-width: 1023px) {
+      font-size: $daaki-font-size-h5 * 2;
+      line-height: 120px;
+    }
+    @media (max-width: 767px) {
+      font-size: 26px;
+      line-height: 120px;
+      transform: none;
+      display: inline;
+      text-align: center;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      height: 86px;
+    }
+    span {
+      border: 1px solid $default-text-color;
+      width: 210px;
+      display: inline-block;
+      height: 210px;
+      text-align: center;
+      box-sizing: border-box;
+      padding: 0 0 0 10px;
+      @media (max-width: 1440px) {
+        width: 120px;
+        height: 120px;
+        line-height: 123px;
+      }
+      @media (max-width: 767px) {
+        width: 85px;
+        height: 85px;
+        line-height: 90px;
+      }
+    }
+  }
+}
+
+.all-product-section {
+  .title-block {
+    div {
+      span {
+        padding: 0 3px 0 10px;
+        margin-right: 5px;
+        box-sizing: initial;
+      }
+
+    }
+  }
+  .all-products {
+    height: 50%;
+    max-width: 1300px;
+    margin: 0 auto;
+    @media (max-width: 1023px) {
+      height: auto;
+    }
+    .images-block {
+      width: 50%;
+      height: 100%;
+      text-align: center;
+      float: left;
+      @media (max-width: 1023px) {
+        width: 100%;
+        height: 300px;
+        float: none;
+      }
+      img {
+        height: 100%;
+      }
+    }
+    .all-products-descriptions {
+      width: 50%;
+      height: 100%;
+      float: left;
+      position: relative;
+      @media (max-width: 1023px) {
+        width: 100%;
+        height: 300px;
+        float: left;
+        margin-top: 50px;
+        margin-bottom: 55px;
+      }
+      @media (max-width: 540px) {
+        height: 240px;
+        margin-bottom: 0;
+      }
+      .descriptions-text {
+        position: absolute;
+        left: 0;
+        right: 75px;
+        margin: auto;
+        text-align: right;
+        top: 0;
+        bottom: 0;
+        height: 260px;
+        line-height: 50px;
+        @media (max-width: 1440px) {
+          height: 180px;
+        }
+        @media (max-width: 480px) {
+          right: 10px;
+        }
+        p {
+          font-size: $font-size-arrow-down;
+          @media (max-width: 1440px) {
+            font-size: $daaki-font-size-h5;
+            line-height: 32px;
+          }
+          @media (max-width: 540px) {
+            font-size: $fontsize-base;
+            line-height: 30px;
+          }
+          span {
+            font-size: $daaki-font-size-h6*4;
+            @media (max-width: 1440px) {
+              font-size: 32px;
+            }
+            @media (max-width: 540px) {
+              font-size: $font-size-arrow-down;
+            }
+            @media (max-width: 420px) {
+              font-size: $fontsize-base * 2;
+            }
+          }
+        }
+        h2 {
+          font-size: $daaki-font-size-h2;
+          color: $daaki-orange-color;
+          font-family: $font-avenir-black;
+          @media (max-width: 1440px) {
+            font-size: $daaki-font-size-h1 / 2;
+            line-height: 42px;
+          }
+          @media (max-width: 420px) {
+            font-size: $font-size-arrow-down;
+            line-height: 31px;
+          }
+        }
+        ul {
+          margin-top: 60px;
+          margin-right: 27px;
+          @media (max-width: 1440px) {
+            margin-top: 30px;
+          }
+          @media (max-width: 540px) {
+            margin-top: 10px;
+          }
+          li {
+            display: inline-block;
+            a {
+              width: 107px;
+              height: 30px;
+              display: block;
+              text-align: center;
+              line-height: 30px;
+              margin: 0 27px;
+              color: $daaki-orange-color;
+              border: 1px solid $daaki-orange-color;
+              font-size: $daaki-font-size-h3/3;
+              font-family: $canal-demi;
+              box-sizing: border-box;
+              &:hover {
+                background: $daaki-orange-color;
+                color: $default-background-color;
+              }
+              @media (max-width: 540px) {
+                margin: 0 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.offers-section {
+  z-index: 9999;
+  .title-block {
+    background: url("../images/offers-bg.png");
+    div {
+      span {
+        width: 210px;
+        height: 210px;
+        line-height: 210px;
+        margin-right: 3px;
+        text-align: right;
+        @media (max-width: 1440px) {
+          width: 135px;
+          height: 135px;
+          line-height: 136px;
+          margin-right: 5px;
+        }
+        @media (max-width: 767px) {
+          width: 80px;
+          height: 80px;
+          line-height: 80px;
+        }
+      }
+    }
+  }
+  .offers-block {
+    height: 50%;
+  }
+  .long-block,
+  .half-block,
+  .full-block {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .long-block {
+    width: 100%;
+    height: 50%;
+    border: 0.5px solid #000000;
+  }
+  .half-block {
+    width: 50%;
+    height: 50%;
+    float: left;
+    border: 0.5px solid #000000;
+  }
+  .full-block {
+    width: 100%;
+    height: 100%;
+    border: 0.5px solid #000000;
+  }
+  .bg-light-blue {
+    background: $light-blue;
+  }
+  .bg-lmiddle-blue {
+    background: $middle-blue;
+  }
+  .bg-dark-blue {
+    background: $dark-blue;
+  }
+}
+
+.three-columns-block {
+  width: 33.33%;
+  height: 100%;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  @media (max-width: 992px) {
+    width: 50%;
+    &:last-child {
+      margin: 0 auto;
+      float: none;
+    }
+  }
+  @media (max-width: 640px) {
+    width: 100%;
+    &:last-child {
+      width: 100%;
+      float: none;
+    }
+  }
+
+}
+
+.block-images-1 {
+  background: url("../images/blog-bg-1.png") no-repeat center;
+  background-size: cover;
+}
+
+.block-images-2 {
+  background: url("../images/blog-bg-4.png") no-repeat center;
+  background-size: cover;
+}
+
+.block-images-3 {
+  background: url("../images/blog-bg-5.png") no-repeat center;
+  background-size: cover;
+}
+
+.small-block-wrapp {
+  width: 33.33%;
+  float: left;
+  @media (max-width: 1023px) {
+    width: 50%;
+    &:last-child {
+      width: 100%;
+    }
+  }
+  @media (max-width: 640px) {
+    width: 100%;
+  }
+}
+
+.small-block-wrapp {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  &:hover {
+    .blog-hover {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.blog-hover {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  bottom: 0;
+  display: block;
+  margin: auto;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-transition: 0.33s;
+  -moz-transition: 0.33s;
+  -ms-transition: 0.33s;
+  -o-transition: 0.33s;
+  transition: 0.33s;
+  opacity: 0;
+  visibility: hidden;
+  span {
+    display: block;
+    width: 170px;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    margin: auto;
+    right: 0;
+    left: 0;
+    &:first-child {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+
+    }
+  }
+}
+
+.small-blog-block {
+  width: 100%;
+  border-right: 1px solid #ffffff;
+  float: left;
+  .blog-image {
+    height: 285px;
+  }
+  .blog-description {
+    p {
+      margin-top: 10px;
+    }
+  }
+}
+
+.blog-image {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #535353;
+}
+
+.blog-description {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid $daaki-orange-color;
+  padding: 25px 10px;
+  position: relative;
+  min-height: 114px;
+  .blog-title {
+    color: $daaki-orange-color;
+    font-size: $fontsize-base * 1.3;
+  }
+  p {
+    font-size: $fontsize-base * 1.11;
+    line-height: 18px;
+    font-family: $font-avenir-book;
+    margin-top: 27px;
+  }
+  .share-block {
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    span {
+      color: $color-gray;
+      font-size: $fontsize-base;
+      border-radius: 50%;
+      border: 1px solid $color-gray;
+      display: inline-block;
+      width: 23px;
+      height: 23px;
+      text-align: center;
+      line-height: 26px;
+      margin-left: 5px;
+      position: relative;
+      cursor: pointer;
+      &:hover {
+        background: $daaki-orange-color;
+        color: #fff;
+        border-color: #fff;
+      }
+    }
+    a {
+      color: $color-gray;
+      font-size: $fontsize-base;
+      border-radius: 50%;
+      border: 1px solid $color-gray;
+      display: inline-block;
+      width: 23px;
+      height: 23px;
+      text-align: center;
+      line-height: 26px;
+      margin-left: 5px;
+      position: relative;
+    }
+    .small-social-list {
+      position: absolute;
+      bottom: 30px;
+      right: 0;
+      height: 0;
+      overflow: hidden;
+      -webkit-transition: 0.33s;
+      -moz-transition: 0.33s;
+      -ms-transition: 0.33s;
+      -o-transition: 0.33s;
+      transition: 0.33s;
+      li {
+        a {
+          margin-bottom: 7px;
+          &:hover {
+            background: $daaki-orange-color;
+            color: #fff;
+            border-color: #fff;
+          }
+        }
+      }
+    }
+    .soc-visible {
+      height: 96px;
+    }
+  }
+}
+
+.the-brand-section {
+  background: url("../images/the-brand-bg.png") no-repeat bottom right;
+  background-size: contain;
+  @media (max-width: 1050px) {
+    height: auto !important;
+    padding: 150px 0 100px 0;
+  }
+  @media (max-width: 640px) {
+    height: 1100px !important;
+  }
+  @media (max-width: 480px) {
+    height: 1300px !important;
+  }
+  @media (max-width: 375px) {
+    height: 1450px !important;
+  }
+  .fp-tableCell{
+    height: auto !important;
+  }
+  .daaki-photo {
+    float: left;
+    margin-top: 120px;
+    @media (max-width: 1360px) {
+      width: 200px;
+      margin-top: 85px;
+      img {
+        width: 100%;
+      }
+    }
+    @media (max-width: 1050px) {
+      width: 150px;
+      margin-top: 0;
+      img {
+        width: 100%;
+      }
+    }
+    @media (max-width: 800px) {
+      overflow: hidden;
+      padding: 0 20px 20px 0;
+    }
+    @media (max-width: 1050px) {
+      width: 85px;
+    }
+  }
+
+  .text-block {
+    width: calc(100% - 305px);
+    box-sizing: border-box;
+    padding: 0 50px;
+    color: #dddddd;
+    font-size: $daaki-font-size-h3 / 1.9;
+    float: left;
+    margin-top: 95px;
+    @media (max-width: 1600px){
+      margin-top: 60px;
+      font-size: 16px;
+    }
+    @media (max-width: 1200px) {
+      br {
+        display: none;
+      }
+    }
+    @media (max-width: 1050px) {
+      margin-top: 0;
+      width: calc(100% - 150px);
+    }
+    @media (max-width: 800px) {
+      width: auto;
+      padding: 0 20px;
+      float: none;
+    }
+    p {
+      margin-top: 30px;
+      color: $dark-gray;
+      line-height: 24px;
+      font-family: $font-avenir-light;
+      &:first-child {
+        margin-top: 0;
+      }
+      @media (max-width: 1600px){
+        margin-top: 20px;
+        line-height: 20px;
+      }
+      @media (max-width: 1360px) {
+        font-size: 13px;
+        line-height: 16px;
+      }
+    }
+    .signature {
+      margin-top: 30px;
+      font-size: 17px;
+      line-height: 22px;
+      @media(max-width: 1600px) {
+        margin-top: 20px;
+        img {
+          width: 170px;
+        }
+      }
+      .position {
+        color: #747474;
+      }
+      .logo-small {
+        width: 160px;
+        height: 50px;
+        background: url("../images/daaki-logo.png") no-repeat;
+        background-size: contain;
+        margin-top: 15px;
+      }
+      @media (max-width: 1200px) {
+        br {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.contact-us-section {
+  height: auto;
+  background: #ffffff;
+  box-sizing: border-box;
+  @media (max-width: 800px) {
+    padding: 20px;
+  }
+  .block-title {
+    text-transform: uppercase;
+    font-size: $daaki-font-size-h3 / 2;
+    font-family: $font-open-sans;
+    font-weight: 300;
+    color: $dark-green;
+    span {
+      font-size: $daaki-font-size-h6*3;
+      font-weight: 700;
+    }
+    .line {
+      width: 21px;
+      height: 2px;
+      background: $daaki-orange-color;
+      margin-bottom: 12px;
+    }
+  }
+  p {
+    color: #aeb6c1;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: $fontsize-base* 1.2;
+    line-height: 18px;
+  }
+  .small-two-col {
+    span {
+      font-size: $daaki-font-size-h3 / 2;
+      font-weight: 700;
+    }
+    ul {
+      margin-top: 25px;
+    }
+    li {
+      color: #aeb6c1;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+    .email-list {
+      font-family: $font-avenir-light;
+      color: $dark-green;
+    }
+  }
+  .two-columns-block {
+    margin-top: 160px;
+    @media (max-width: 1440px) {
+      margin-top: 80px;
+    }
+  }
+}
+
+.two-columns-block {
+  width: 50%;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 50px;
+  @media (max-width: 830px) {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+  &.small-two-col {
+    padding: 0;
+  }
+}
+
+.form {
+  margin-top: 35px;
+  input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid $light-green;
+    height: 46px;
+    padding: 0 24px;
+    margin-bottom: 9px;
+    color: $light-green;
+  }
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid $light-green;
+    height: 180px;
+    padding: 24px;
+    margin-bottom: 9px;
+    color: $light-green;
+    resize: none;
+  }
+  .btn-submit {
+    background: $daaki-orange-color;
+    color: #ffffff;
+    font-size: $fontsize-base;
+    width: 120px;
+    float: right;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.transform-wrap {
+  transform: none !important;
+}

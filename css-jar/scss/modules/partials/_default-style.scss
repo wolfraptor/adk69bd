@@ -1,0 +1,12 @@
+body{
+  background: $default-background-color;
+  font-family: $font-avenir-roman;
+  color: $default-text-color;
+}
+.wrapper{
+  height: auto;
+  width: 100%;
+  @media(max-width:767px){
+  	overflow-x: hidden;
+  }
+}

@@ -1,0 +1,348 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.scanning{
+  color: #000;
+  background-color: #fff;
+  background-image:url("../images/scan-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+  box-sizing: border-box;
+  
+  *{
+    box-sizing: border-box;
+  }
+  
+  &-heading{
+    font-size: 80px;
+    color: #000;
+    font-weight: bold;
+//    float: right;
+    font-family: "Avenir LT Std 95 Black";
+    text-align: right;
+    padding-right: 40px;
+    margin-bottom: 155px;
+    @media(max-width: 700px){
+      margin-bottom: 25px;
+    }
+    
+    sup{
+      font-size: 35px;
+      position: relative;
+      top: -40px;
+      left: -30px;
+      font-weight: normal;
+      font-family: 'AvenirLTStd-Roman';
+    }
+    
+    span{
+      display: block;
+      font-size: 33px;
+      margin-top: 5px;
+      padding-top: 5px;
+      border-top: 2px solid #bbbbbb;
+      margin-right: 40px;
+      padding-left: 7px;
+      max-width: 515px;
+      margin-left: auto;
+    }
+  }
+  
+  .row{
+    @include clearfix;
+    
+    .left-side{
+      float: left;
+      width: 23%;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .right-side{
+      float: left;
+      width: 77%;
+      @media(max-width: 700px){
+        padding-top: 135px;
+        overflow-x: scroll;
+      }
+    }
+  }
+}
+
+.scanning-article{
+  background: #000;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  color: #fff;
+  
+  h3{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Avenir LT Std 95 Black";
+    padding-bottom: 20px;
+  }
+  
+  p{
+    font-family: 'Avenir LT Std 45 Book';
+    padding-bottom: 20px;
+  }
+  
+  &.first-article{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    margin-top: 195px;
+    
+    h3{
+      padding-bottom: 35px;
+    }
+    
+    p{
+      padding-bottom: 35px;
+    }
+  }
+}
+
+.scanning-table{
+  width: 100%;
+  .heading-row{
+    position: relative;
+    
+    img{
+      display: block;
+      width: 120px;
+      max-width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      
+      &.kasuta{
+        width: 145px;
+        top: -95px;
+      }
+      
+      &.syntha{
+        width: 112px;
+        top: -74px;
+      }
+      
+      &.combat{
+        width: 103px;
+        top: -68px;
+      }
+      
+      &.phase{
+        width: 87px;
+        top: -69px;
+      }
+      
+      &.nutra{
+        width: 109px;
+        top: -77px;
+      }
+      
+      &.meter{
+        width: 148px;
+        top: -86px;
+      }
+      
+      &.on-gold{
+        width: 89px;
+        top: -65px;
+      }
+      
+      &.dymatize{
+        width: 80px;
+        top: -65px;
+      }
+      
+      &.un-pro{
+        width: 105px;
+        top: -65px;
+      }
+      
+      &.sci-max{
+        width: 107px;
+        top: -65px;
+      }
+      
+      &.bullet{
+        width: 136px;
+        top: -75px;
+      }
+      
+      &.on-platinum{
+        width: 89px;
+        top: -45px;
+      }
+      
+      &.dymatize-iso{
+        width: 78px;
+        top: -37px;
+      }
+      
+      &.muscle{
+        width: 95px;
+        top: -37px;
+      }
+      
+      &.nutrabolics{
+        width: 80px;
+        top: -37px;
+      }
+    }
+    
+    td{
+      text-align: center;
+      position: relative;
+      padding-top: 130px;
+      
+      &:first-child{
+        .manufacturer-name{
+          text-transform: uppercase;    
+          font-size: 33px;
+          text-align: center;    
+          font-family: 'Avenir LT Std 85 Heavy';
+          
+          sup{
+            font-family: 'Avenir LT Std 85 Heavy';
+            font-size: 23px;
+            font-weight: normal;
+            top: -15px;
+            left: -2px;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+  
+  tr{
+    td:first-child{
+      color: #ff6600;
+    }
+    
+    td{
+      padding: 20px 10px;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-family: 'AvenirLTStd-Roman';
+      border-left: 1px solid #000;
+      vertical-align: middle;
+      
+      &.big-font{
+        font-size: 15px;
+      }
+      
+      &.center{
+        text-align: center;
+      }
+      
+      &:first-child{
+        font-family: 'Avenir LT Std 45 Book';        
+      }
+    }
+    
+    b{
+        font-family: 'Avenir LT Std 85 Heavy';
+    }
+    
+    ul{
+      line-height: 1.4;
+      
+      li{
+        &.big-padding{
+           padding-bottom: 25px; 
+        }
+      }
+    }
+  }
+  
+  tr:nth-child(odd):first-child{
+    td:first-child{
+-webkit-box-shadow: inset -2px -164px 109px 5px rgba(0,0,0,1);
+-moz-box-shadow: inset -2px -164px 109px 5px rgba(0,0,0,1);
+box-shadow: inset -2px -164px 109px 5px rgba(0,0,0,1);
+    }
+  }
+  
+  tr:nth-child(odd):not(:first-child){
+    td:first-child{
+      background: #000;
+    }
+  }
+  
+  tr:nth-child(even):not(:first-child){
+    td{
+      background: rgba(0,0,0,0.1);
+    }
+  }
+  
+  tr:nth-child(even){
+    td:first-child{
+      background: #171717;
+    }
+  }
+  
+  tr{
+    td{
+      line-height: 1.4;
+    }
+  }
+  .manufacturer-name{
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;    
+    font-family: 'Avenir LT Std 95 Black';
+  }
+  
+  .parameter{
+    font-family: 'Avenir LT Std 85 Heavy';
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+    &.big-padding{
+      padding-bottom: 25px;
+    }
+  }
+  
+  span{
+  }
+  
+  span.big-padding{
+    display: block;
+    padding-bottom: 25px;
+  }
+  
+  i{
+    font-style: italic;
+  }
+  
+  tr:nth-child(even){
+    td:first-child{
+    position: relative;
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 300%;
+      left: -300%;
+      background: rgba(0,0,0,0.1);
+    }
+    }
+  }
+}

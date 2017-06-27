@@ -1,0 +1,17 @@
+@mixin rating-number($position,$padding,$font-size,$left-margin,$top-margin){
+    margin-top: $top-margin;
+    font-size: $font-size;
+    font-family: $font-avenir-black;
+    float: $position;
+    margin-left: $left-margin;
+    span{
+      color: $daaki-orange-color;
+      border: 2px solid $daaki-orange-color;
+      padding: $padding;
+    }
+    i{
+      font-family: $font-avenir-light;
+      color: $daaki-orange-color;
+    }
+
+}

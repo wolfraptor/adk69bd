@@ -1,0 +1,165 @@
+.gossip-section {
+  .title-block {
+    height: 36%;
+    div {
+      span {
+        margin-right: 10px;
+      }
+
+    }
+  }
+  overflow: hidden;
+  @media (max-width: 1024px) {
+    height: auto!important;
+  }
+  .title-block {
+    @media (max-width: 1000px) {
+      height: 400px;
+    }
+    background: url("../images/gossip-bg.png") no-repeat center;
+    background-size: cover;
+  }
+  .card-wrapp {
+    height: 64%;
+    background: $blue-background;
+    padding-top: 25px;
+    box-sizing: border-box;
+    @media (max-width: 1024px) {
+      height: auto!important;
+    }
+    #bx-silder{
+      height: 100%;
+    }
+    .card-block {
+      float: left;
+      box-sizing: border-box;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+      position: relative;
+      -webkit-transition: 0.33s;
+      -moz-transition: 0.33s;
+      -ms-transition: 0.33s;
+      -o-transition: 0.33s;
+      transition: 0.33s;
+      .user-photo {
+        width: 78px;
+        height: 78px;
+        margin: 25px auto 0 auto;
+        background: url("../images/user-photo.png");
+      }
+      .coach-name {
+        font-size: $fontsize-base * 1.6;
+        font-family: $font-avenir-heavy;
+        text-align: center;
+        margin-top: 15px;
+      }
+      .coach-position {
+        font-size: $font-size-arrow-down /1.9;
+        font-family: $font-avenir-roman;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .coach-des {
+        font-size: $fontsize-base;
+        font-family: $font-avenir-roman;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .text-block {
+        margin-top: 100px;
+        text-align: center;
+        @media (max-width: 1300px) {
+          margin-top: 50px;
+        }
+        p {
+          color: #ffffff;
+          position: relative;
+          width: 50%;
+          height: 50px;
+          overflow: hidden;
+          line-height: 24px;
+          display: inline-block;
+          &:before {
+            content: ' " ';
+            position: absolute;
+            top: -10px;
+            left: -20px;
+            font-family: $font-avenir-heavy;
+          }
+          &:after {
+            content: '"';
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            font-family: $font-avenir-heavy;
+          }
+          &.long-width{
+            width: 80%;
+          }
+        }
+
+      }
+      @media (max-width: 1000px) {
+        height: 476px;
+      }
+      @media (max-width: 640px) {
+        width: 100%;
+        height: 450px;
+      }
+    }
+    .open-block{
+      width: 27px;
+      height: 27px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      position: absolute;
+      cursor: pointer;
+      left: 0;
+      right: 0;
+      bottom: 15px;
+      margin: auto;
+      @media (max-width: 479px){
+        display: none;
+      }
+      &:hover{
+        .open-card{
+          width: 50%!important;
+        }
+      }
+      span {
+        width: 13px;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        display: block;
+        background: #fff;
+        &:first-child {
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}
+.open-gossip-card{
+  width: 50%!important;
+}
+.bx-viewport{
+  -moz-box-shadow: none!important;
+  -webkit-box-shadow: none!important;
+  box-shadow: none!important;
+  border: none!important;
+  left: 0!important;
+  background: transparent!important;
+  height: 100%!important;
+}

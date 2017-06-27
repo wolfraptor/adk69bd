@@ -1,0 +1,47 @@
+html, body{
+  min-width: 320px;
+}
+
+@import "font-awesome/font-awesome.scss";
+@import 'variables/typographics';
+@import 'variables/colors';
+
+@import "home-page";
+@import "kasuta";
+@import "meter";
+@import "bullet";
+
+@import "profile";
+// @import "blog";
+
+
+@import "partials/default-style";
+@import "partials/nav-bar";
+@import "partials/buttons";
+@import "partials/fullpage-custom";
+@import "partials/footer";
+@import "partials/comments-block";
+@import "partials/slider";
+@import "partials/facts-block";
+@import "partials/gossip-section";
+@import "partials/events-block";
+@import "partials/products-block";
+@import "partials/retail-section";
+
+//kasuta sections
+@import "partials/kasuta-sections/maximize-perfomance";
+@import "partials/kasuta-sections/anabolic";
+@import "partials/kasuta-sections/supplement-facts";
+@import "partials/kasuta-sections/scanning";
+
+//event page
+@import "partials/event/event";
+
+
+//Additional for video section
+@import "additional";
+
+//login
+@import "login";
+
+

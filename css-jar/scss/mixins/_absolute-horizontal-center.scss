@@ -1,0 +1,7 @@
+@mixin absolute-horizontal-center($position-bottom){
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: $position-bottom;
+  margin: auto;
+}

@@ -1,0 +1,403 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.meter-page{
+  .primary-description .big-description:first-child{
+    margin-bottom: 30px;
+  }
+
+  .primary-description .description-wrapper .small-title-description{
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
+
+  .content-wrapper{
+
+    &.meter-content{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 600px;
+      padding-top: 60px;
+      padding-bottom: 40px;
+      
+      h2{
+        font-family: "Avenir LT Std 95 Black";
+        font-size: 45px;
+        line-height: 1.2;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #000;
+        display: inline-block;
+        padding-right: 10px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+  
+  .text-row{
+    line-height: 150px;
+    margin-bottom: 80px;
+    
+    img{
+      height: 150px;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    
+    p{
+      display: inline-block;
+      line-height: 1.2;
+      
+      &.top-text{
+        vertical-align: top;
+        font-size: 23px;
+      }
+      
+      &.bottom-text{
+        vertical-align: bottom;
+        margin: 0;
+        font-size: 18px;
+      }
+    }
+  }
+  
+  
+  .bordered-text{
+    margin-top: 10px;
+    display: inline-block;
+    border: 2px solid #ff6600;
+    padding: 10px 10px 6px 10px;
+    line-height: 22px;
+    margin-bottom: 60px;
+  }
+  
+  .serving-info{
+    display: block;
+    width: 85%;
+    margin-left: auto;
+    margin-bottom: 60px;
+  }
+  
+  .section-microscope h2{
+    color: #ff6600;
+    border-bottom: none;
+    font-family: 'Avenir LT Std 95 Black';
+    
+    span{
+      padding-top: 17px;
+      margin-top: 10px;
+      border-top: 2px solid #ff6600;
+      color: #fff;
+      display: block;
+      text-align: right;
+      font-size: 25px;
+      line-height: 1.2;
+     font-family: 'Avenir LT Std 65 Medium';
+      letter-spacing: 1px;
+    }
+  }
+  
+  .meter-microscope{
+    background:repeating-linear-gradient(
+  45deg,
+  #080808,
+  #080808 10px,
+  #000 10px,
+  #000 20px
+);
+    box-sizing: border-box;
+    
+    *{
+      box-sizing: border-box;
+    }
+    
+    .content-wrapper{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto !important;
+      height: 550px;
+    }
+  }
+  
+  .meter-scheme{
+    display: block;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  
+  .info-list{
+    position: absolute;
+    
+    li{
+      color: #000;
+      background: #fff;
+      line-height: 1.6;
+      text-transform: uppercase;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 10px;
+      width: 100%;
+      position: relative;
+      font-family: 'Avenir LT Std 55 Oblique';
+    }
+    
+    &--top{
+      top: 135px;
+      left: 265px;
+      
+      li{
+        &:first-child{
+          &:before{
+            position: absolute;
+            content: '';
+            top: 1px;
+            left: -13px;
+            bottom: 1px;
+            width: 13px;
+            background: url('../images/triangle.png') center center no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
+    
+    &--inner{
+      position: static;
+      display: block;
+      max-width: 490px;
+      
+      li{
+        padding-left: 5px;
+        margin-bottom: 20px;
+      
+        &:first-child{
+          &:before{
+            position: absolute;
+            content: '';
+            top: -18px;
+            right: 4px;
+            width: 13px;
+            height: 23px;
+            background: url('../images/triangle.png') center center no-repeat;
+            background-size: cover;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+    
+    &--bottom{
+      bottom: -110px;
+      right: 140px;
+      width: 400px;
+      max-width: 100%;
+      li{
+        &:first-child{
+          &:before{
+            position: absolute;
+            content: '';
+            top: -18px;
+            right: 4px;
+            width: 13px;
+            height: 23px;
+            background: url('../images/triangle.png') center center no-repeat;
+            background-size: cover;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+  }
+  
+  .info-block{
+    position: absolute;
+    top: 425px;
+    left: 80px;
+    box-sizing: border-box;
+    
+    *{
+      box-sizing: border-box;
+    }
+  }
+  
+  .advantages-list{
+    margin-bottom: 30px;
+    li{
+      display: inline-block;
+      color: #ff6600;
+      text-transform: uppercase;
+      padding-left: 2px;
+      padding-right: 7px;
+      padding-top: 1px;
+      padding-bottom: 1px;
+      
+      &:not(:last-child){
+        border-right: 1px solid #fff;
+      }
+    }
+  }
+  
+  .bordered-button{
+    padding: 10px 15px;
+    color: #ff6600;
+    border: 1px solid #ff6600;
+    text-transform: uppercase;
+  }
+  
+  .performance-section{
+    border-bottom: none;
+    background: url('../images/meter-complex.jpg') center center no-repeat;
+    background-size: cover;
+    
+    .content-wrapper{
+      overflow: visible;
+      
+      &.custom{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 650px;
+      }
+      
+      .content-row{
+        @include clearfix;
+      }
+    }
+    
+    .left-col{
+      width: 65%;
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px;
+      box-sizing: border-box;
+    }
+    
+    .right-col{
+      width: 35%;
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px;
+      box-sizing: border-box;
+    }
+    
+    .left-article{
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      
+      .heading{
+        font-family: "Avenir LT Std 95 Black";
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: none;
+        font-size: 25px;
+        margin-bottom: 20px;
+        display: block;
+        
+        span{
+          font-family: "AvenirLTStd-Medium";
+          font-size: 16px;
+        }
+      }
+      
+      .bordered-text{
+        border: 1px solid #fff;
+        padding: 10px 20px;
+        margin-bottom: 15px;
+        
+        &.big-padding{
+          margin-bottom: 30px;
+        }
+        
+        &.filled{
+          background: #fff;
+          color: #000;
+          font-family: "Avenir LT Std 95 Black";
+        }
+        
+        &.big-text{
+          font-size: 25px;
+        }
+        
+        &.spaced-letters{
+          letter-spacing: 3px;
+        }
+      }
+      
+      .square-list{
+        list-style: square !important;
+        padding-left: 20px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        
+        li{
+          margin-bottom: 15px;
+          line-height: 1.4;
+        }
+      }
+    }
+    
+    .bordered-list{
+      border: 1px solid #fff;
+      padding: 10px 20px;
+      position: relative;
+      margin-top: 150px;
+      
+      &:before{
+        content: '';
+        position: absolute;    
+        top: -136px;
+        right: -163px;
+        background: url("../images/200mg.png") center center no-repeat;
+        background-size: contain;
+        width: 500px;
+        height: 250px;
+      }
+      
+      li{
+        &:not(:last-child){
+          margin-bottom: 15px;
+        }
+      }
+    }
+    
+    .proteara-img{
+      display: block;
+      max-width: 560px;
+      position: relative;
+      right: 150px;
+      top:50px;
+    }
+    
+    .add-descr{
+      text-transform: uppercase;
+      line-height: 1.4;
+        font-family: 'Avenir LT Std 45 Book'; 
+      
+      b{
+        font-weight: bold;
+      font-family: 'Avenir LT Std 85 Heavy';
+      }
+      
+    }
+  }
+  
+}
