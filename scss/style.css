@@ -9650,8 +9650,7 @@ footer {
     cursor: pointer; }
   .login * {
     box-sizing: border-box;
-    color: #dc9f39 !important;
-    text-transform: uppercase !important; }
+    color: #dc9f39 !important; }
   .login-container {
     max-width: 1160px;
     min-width: 320px;
