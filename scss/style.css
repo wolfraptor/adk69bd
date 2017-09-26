@@ -2217,8 +2217,8 @@ html, body {
   .share-icon a {
     color: #fff;
     display: block;
-    width: 43px;
-    height: 43px;
+    width: 48.5px;
+    height: 48.5px;
     text-align: center;
     line-height: 49px; }
     .share-icon a.custom {
@@ -6274,7 +6274,7 @@ body {
             .nav-bar .nav li .sub-nav li a:hover {
               background: #666666; }
       .nav-bar .nav li .drop-down {
-        padding: 9px 30px; }
+        padding: 13px 30px; }
       @media (max-width: 1024px) {
         .nav-bar .nav li:hover .sub-nav {
           width: 140px; } }
