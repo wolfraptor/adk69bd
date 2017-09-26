@@ -2209,7 +2209,7 @@ html, body {
   position: absolute;
   right: 30px;
   top: 17px;
-  width: 43px;
+  width: 48.5px;
   height: 43px;
   background: url("../images/share-icon.png") no-repeat center top;
   background-position: center 14px;
@@ -2218,7 +2218,7 @@ html, body {
     color: #fff;
     display: block;
     width: 48.5px;
-    height: 48.5px;
+    height: 43.5px;
     text-align: center;
     line-height: 49px; }
     .share-icon a.custom {
