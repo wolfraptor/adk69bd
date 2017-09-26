@@ -6290,7 +6290,7 @@ body {
         margin: auto;
         bottom: 70px; } }
   .nav-bar .share-icon {
-    top: -4px;
+    top: 1px;
     right: -134px;
     -webkit-transition: 0.33s;
     transition: 0.33s;
