@@ -2287,7 +2287,7 @@ html, body {
     height: 150px;
     text-align: center; }
     .logo-section .logo-block .logo {
-      width: 350px;
+      width: 400px;
       height: 104px;
       display: inline-block;
       background: url("../images/ni/t-logo.png") no-repeat center;
@@ -2297,7 +2297,7 @@ html, body {
           width: 90%; } }
     .logo-section .logo-block h5 {
 	font-family: Times New Roman;
-    font-size: 15.5px;
+    font-size: 17px;
     color: #ffffff;
     letter-spacing: 3px;
     text-align: center;
