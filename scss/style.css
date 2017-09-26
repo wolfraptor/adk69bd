@@ -6180,7 +6180,8 @@ body {
   left: 0;
   right: 0;
   display: none;
-  height: 40px; }
+  height: 40px;
+  border-bottom: 1px solid #dda039;}
   @media (max-width: 1024px) {
     .nav-bar {
       height: 40px;
