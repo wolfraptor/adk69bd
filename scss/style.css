@@ -2209,7 +2209,7 @@ html, body {
   position: absolute;
   right: 30px;
   top: 17px;
-  width: 48.5px;
+  width: 43px;
   height: 43px;
   background: url("../images/share-icon.png") no-repeat center top;
   background-position: center 14px;
@@ -2217,8 +2217,8 @@ html, body {
   .share-icon a {
     color: #fff;
     display: block;
-    width: 48.5px;
-    height: 43.5px;
+    width: 43px;
+    height: 43px;
     text-align: center;
     line-height: 49px; }
     .share-icon a.custom {
@@ -2242,7 +2242,9 @@ html, body {
     line-height: 49px;
     margin-bottom: 1px; }
     .social-list a:hover {
-      background: #666666; }
+      background: #666666; 
+      color:#dc9f39;
+     }
 
 .show-share > a {
   background: url("../images/share-icon.png") no-repeat center top #ffffff;
@@ -2287,7 +2289,7 @@ html, body {
     height: 150px;
     text-align: center; }
     .logo-section .logo-block .logo {
-      width: 400px;
+      width: 350px;
       height: 104px;
       display: inline-block;
       background: url("../images/ni/t-logo.png") no-repeat center;
@@ -2297,7 +2299,7 @@ html, body {
           width: 90%; } }
     .logo-section .logo-block h5 {
 	font-family: Times New Roman;
-    font-size: 17px;
+    font-size: 15.5px;
     color: #ffffff;
     letter-spacing: 3px;
     text-align: center;
@@ -2681,6 +2683,10 @@ html, body {
             line-height: 30px; } }
         .all-product-section .all-products .all-products-descriptions .descriptions-text p span {
           font-size: 40px; }
+          @media (min-width: 1441px){
+            .all-product-section .all-products .all-products-descriptions .descriptions-text p span {
+          font-size: 42px; }
+          }
           @media (max-width: 1440px) {
             .all-product-section .all-products .all-products-descriptions .descriptions-text p span {
               font-size: 31px; } }
@@ -2694,6 +2700,10 @@ html, body {
         font-size: 50px;
 		color: #dc9f39;
 		font-family: Times New Roman;}
+    @media (min-width: 1441px){
+      .all-product-section .all-products .all-products-descriptions .descriptions-text h2 {
+        font-size: 52px;}
+    }
 		@media (max-width: 1440px) {
           .all-product-section .all-products .all-products-descriptions .descriptions-text h2 {
             font-size: 38px;
@@ -3810,7 +3820,7 @@ hr {
     border: none; }
 
 .product-page .nav-bar {
-  top: 125px;
+  /*top: 125px;*/
   -webkit-transition: 0.33s;
   transition: 0.33s;
   display: block; }
@@ -5499,12 +5509,13 @@ body::-webkit-scrollbar {
 .profile-page .profile-section {
   max-width: 1450px;
   margin: 0 auto;
-  padding: 0 10px; }
+  padding: 0 10px;
+  margin-top: -10% }
 .profile-page .profile-row {
-  margin-left: -10px;
-  margin-right: -10px;
   overflow: hidden;
-  clear: both; }
+  clear: both;
+  padding-left: 5%;
+  padding-right: 5%; }
 .profile-page .profile-photo {
   width: 20%;
   float: left;
@@ -5545,7 +5556,7 @@ body::-webkit-scrollbar {
   .profile-page .profile-header-line {
     display: inline-block; }
   .profile-page .profile-header__name {
-    font-size: 70px;
+    font-size: 55px;
     line-height: 85px;
     font-family: "Avenir LT Std 85 Heavy";
     overflow: hidden;
@@ -5584,7 +5595,7 @@ body::-webkit-scrollbar {
           width: 50px;
           height: 50px; } }
   .profile-page .profile-header__position {
-    font-size: 26px;
+    font-size: 22px;
     line-height: 39px;
     overflow: hidden;
     margin-bottom: 11px; }
@@ -5615,7 +5626,7 @@ body::-webkit-scrollbar {
           width: 30px;
           height: 30px; } }
   .profile-page .profile-header__location {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 32px;
     overflow: hidden;
     margin-bottom: 37px; }
@@ -5649,7 +5660,7 @@ body::-webkit-scrollbar {
           width: 24px;
           height: 24px; } }
   .profile-page .profile-header__indicators {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 32px;
     overflow: hidden; }
     @media (max-width: 768px) {
@@ -5746,7 +5757,7 @@ body::-webkit-scrollbar {
       background-color: #e1e1e1;
       width: 100%;
       text-align: center;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1;
       padding: 17px 0;
       cursor: pointer; }
@@ -5864,7 +5875,7 @@ body::-webkit-scrollbar {
   .profile-page .order-title {
     padding: 40px 50px 0;
     font-family: "Avenir LT Std 85 Heavy";
-    font-size: 25px; }
+    font-size: 23px; }
     @media (max-width: 768px) {
       .profile-page .order-title {
         padding: 30px 30px 0; } }
@@ -5873,7 +5884,7 @@ body::-webkit-scrollbar {
         font-size: 20px;
         padding: 15px 15px 0; } }
   .profile-page .order-status {
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 0; }
     .profile-page .order-status.dispatched {
       color: #0dae01; }
@@ -5906,7 +5917,7 @@ body::-webkit-scrollbar {
       display: inline-block;
       vertical-align: middle;
       font-family: "AvenirLTStd-Medium";
-      font-size: 18px;
+      font-size: 16px;
       line-height: 25px; }
       @media (max-width: 480px) {
         .profile-page .order-bank span {
@@ -5918,7 +5929,7 @@ body::-webkit-scrollbar {
       margin: 0 auto; } }
   .profile-page .order-buttons a {
     font-family: "AvenirLTStd-Medium";
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     display: block;
     width: 100%;
@@ -5939,7 +5950,7 @@ body::-webkit-scrollbar {
   background-color: #fff;
   overflow: hidden;
   clear: both;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 46px;
   position: relative; }
   @media (max-width: 768px) {
@@ -6028,7 +6039,7 @@ body::-webkit-scrollbar {
   background-color: #fff;
   padding: 55px 50px;
   font-family: "AvenirLTStd-Book";
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.2; }
   @media (max-width: 768px) {
     .profile-page .address {
@@ -6139,7 +6150,7 @@ body::-webkit-scrollbar {
     display: block;
     width: 100%;
     border: 1px #c7c7c7 solid;
-    font-size: 12px;
+    font-size: 11px;
     padding: 12px 34px;
     margin-bottom: 30px;
     box-sizing: border-box;
@@ -6156,11 +6167,10 @@ body::-webkit-scrollbar {
       color: #000;
       text-align: center;
       margin-bottom: 0;
-      font-size: 15px;
+      font-size: 13px;
       cursor: pointer;
       border-radius: 0;
       -webkit-appearance: none; }
-
 body {
   background: #000000 !important;
   font-family: "AvenirLTStd-Roman";
@@ -6180,8 +6190,10 @@ body {
   left: 0;
   right: 0;
   display: none;
-  height: 45px;
-  border-bottom: 1px solid #dda039;}
+  height: 40px;
+
+  /*border-bottom: 1px solid #dda039;*/
+}
   @media (max-width: 1024px) {
     .nav-bar {
       height: 40px;
@@ -6192,10 +6204,12 @@ body {
     width: 44px;
     height: 30px;
     display: block;
+    left: 35px;
+    top: 5px;
     background: url("../images/double-gun-white.png") no-repeat center;
     position: absolute;
-    left: -100px;
-    top: 6px;
+    /*left: -100px;*/
+    top: 3px;
     -webkit-transition: 1s;
     transition: 1s; }
     @media (max-width: 1024px) {
@@ -6206,13 +6220,19 @@ body {
     .nav-bar .nav-bar-logo.logo-visible {
       left: 35px; }
   .nav-bar .nav {
-    text-transform: uppercase;
+    /*text-transform: uppercase;
     position: absolute;
-    /*left: 0;
-     right: 0; */
+    left: 0;
+     right: 0; 
 	right: 342px;
     margin: auto;
-    /* width: 48%;  */}
+    /* width: 48%;  */
+    text-transform: uppercase;
+    position: absolute;
+    right: 80px;
+    margin: auto;
+    width: 55%;
+   }
     @media (max-width: 1280px) {
       .nav-bar .nav {
         width: 50%; } }
@@ -6232,13 +6252,15 @@ body {
           float: none; } }
       .nav-bar .nav li a {
         color: #ffffff;
-        padding: 14.5px 36px;
+        padding: 11px 36px;
         display: block;
 		font-size:12px;
         font-family: Lato Regular;
 		letter-spacing: 2px; }
         .nav-bar .nav li a:hover {
           background: #dda039; }
+        .nav-bar .nav li a:focus {
+          background-color:#dc9f39; }
         .nav-bar .nav li a .fa-angle-down {
           font-size: 18px;
           color: gray;
@@ -6272,9 +6294,10 @@ body {
             padding: 8px 23px 10px 0;
             background: #333333; }
             .nav-bar .nav li .sub-nav li a:hover {
-              background: #666666; }
+              background: #666666;
+              text-decoration: none; }
       .nav-bar .nav li .drop-down {
-        padding: 13px 30px; }
+        padding: 9px 30px; }
       @media (max-width: 1024px) {
         .nav-bar .nav li:hover .sub-nav {
           width: 140px; } }
@@ -6290,8 +6313,8 @@ body {
         margin: auto;
         bottom: 70px; } }
   .nav-bar .share-icon {
-    top: 1px;
-    right: -134px;
+    top: -4px;
+    right: -15px;
     -webkit-transition: 0.33s;
     transition: 0.33s;
     cursor: pointer; }
@@ -9651,7 +9674,8 @@ footer {
     cursor: pointer; }
   .login * {
     box-sizing: border-box;
-    color: #dc9f39 !important; }
+    color: #dc9f39 !important;
+    text-transform: uppercase !important; }
   .login-container {
     max-width: 1160px;
     min-width: 320px;
@@ -10969,3 +10993,6 @@ footer {
       @media (max-width: 1024px) {
         .checkout-section .data__list-value {
           width: 55%; } }
+        .f-s-30{
+  font-size: 30px !important;
+}
