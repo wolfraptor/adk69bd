@@ -2217,8 +2217,8 @@ html, body {
   .share-icon a {
     color: #fff;
     display: block;
-    width: 43px;
-    height: 43px;
+    width: 48.5px;
+    height: 48.5px;
     text-align: center;
     line-height: 49px; }
     .share-icon a.custom {
@@ -6190,9 +6190,9 @@ body {
   left: 0;
   right: 0;
   display: none;
-  height: 40px;
+  height: 45px;
 
-  /*border-bottom: 1px solid #dda039;*/
+  border-bottom: 1px solid #dda039;
 }
   @media (max-width: 1024px) {
     .nav-bar {
@@ -6209,7 +6209,7 @@ body {
     background: url("../images/double-gun-white.png") no-repeat center;
     position: absolute;
     /*left: -100px;*/
-    top: 3px;
+    top: 7px;
     -webkit-transition: 1s;
     transition: 1s; }
     @media (max-width: 1024px) {
@@ -6252,7 +6252,7 @@ body {
           float: none; } }
       .nav-bar .nav li a {
         color: #ffffff;
-        padding: 11px 36px;
+        padding: 14.5px 36px;
         display: block;
 		font-size:12px;
         font-family: Lato Regular;
@@ -6297,7 +6297,7 @@ body {
               background: #666666;
               text-decoration: none; }
       .nav-bar .nav li .drop-down {
-        padding: 9px 30px; }
+        padding: 12.5px 30px; }
       @media (max-width: 1024px) {
         .nav-bar .nav li:hover .sub-nav {
           width: 140px; } }
