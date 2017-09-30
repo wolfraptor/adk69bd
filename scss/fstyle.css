@@ -788,7 +788,7 @@
 	background-image: url('../images/ni/boxerpose1.png');
 	background-size: cover;
 	height: 100%;
-    min-height: 885px !important;
+    min-height: 900px !important;
 }
 @media (max-width: 1280px) {
       .facts-left {
@@ -880,7 +880,7 @@
 }
 
 .facts-right{
-	height:442.5px;
+	height:450px;
 }
 .facts-right1{
 	height:100%;
