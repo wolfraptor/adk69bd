@@ -363,6 +363,11 @@
 
 
 /* kasuta */
+.h-k-pro-img {
+    height: 412px;
+    width: 330px;
+    margin-top: 60px;
+}
 @media (min-width: 1500px) {
 	.h-k-pro-img {
 		height: 412px !important;
